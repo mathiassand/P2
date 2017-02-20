@@ -68,4 +68,80 @@
   doi       = {10.1007/978-3-642-36172-2},
 }
 
+@Article{copd,
+  author    = {Jenny Ure and Hilary Pinnock and Janet Hanley and Gillian Kidd and Emily McCall Smith and Alex Tarling and Claudia Pagliari and Aziz Sheikh and William MacNee and Brian McKinstry},
+  title     = {Piloting tele-monitoring in COPD: a mixed methods exploration of issues in design and implementation},
+  journal   = {Primary Care Respiratory Journal},
+  year      = {2011},
+  volume    = {21},
+  number    = {1},
+  pages     = {57--64},
+  month     = {jul},
+  doi       = {10.4104/pcrj.2011.00065},
+  publisher = {Springer Nature},
+}
+
+@InProceedings{Li_2010,
+  author    = {Ian Li and Anind Dey and Jodi Forlizzi},
+  title     = {A stage-based model of personal informatics systems},
+  booktitle = {Proceedings of the 28th international conference on Human factors in computing systems - {CHI} {\textquotesingle}10},
+  year      = {2010},
+  publisher = {Association for Computing Machinery ({ACM})},
+  doi       = {10.1145/1753326.1753409},
+}
+
+@Misc{eMoods,
+  author       = {{Yottaram LLC}},
+  title        = {eMoods Bipolar Mood Tracker},
+  howpublished = {https://play.google.com/store/apps/details?id=my.tracker\&hl=en},
+  year         = {2017},
+}
+
+@Misc{MoodLog,
+  author       = {{AR Productions}},
+  title        = {Mood Log},
+  howpublished = {https://play.google.com/store/apps/details?id=arproductions.andrew.moodlog\&hl=en},
+  year         = {2017},
+}
+
+@Misc{iMood,
+  author       = {{Inexica Inc.}},
+  title        = {iMoodJournal},
+  howpublished = {https://play.google.com/store/apps/details?id=com.inexika.imood\&hl=en},
+  year         = {2017},
+}
+
+@Misc{actigraph,
+  author       = {{ActiGraph Corp}},
+  title        = {Sleep Assessment | ActiGraph},
+  howpublished = {http://actigraphcorp.com/solutions/sleep-assessment/},
+  year         = {2017},
+}
+
+@Article{sleep,
+  author    = {Polina Eidelman and Lisa S. Talbot and June Gruber and Allison G. Harvey},
+  title     = {Sleep, illness course, and concurrent symptoms in inter-episode bipolar disorder},
+  journal   = {Journal of Behavior Therapy and Experimental Psychiatry},
+  year      = {2010},
+  volume    = {41},
+  number    = {2},
+  pages     = {145--149},
+  month     = {jun},
+  doi       = {10.1016/j.jbtep.2009.11.007},
+  publisher = {Elsevier {BV}},
+}
+
+@Article{sleepdisturbance,
+  author    = {Katherine A Kaplan and Lisa S Talbot and June Gruber and Allison G Harvey},
+  title     = {Evaluating sleep in bipolar disorder: comparison between actigraphy, polysomnography, and sleep diary},
+  journal   = {Bipolar Disorders},
+  year      = {2012},
+  volume    = {14},
+  number    = {8},
+  pages     = {870--879},
+  month     = {nov},
+  doi       = {10.1111/bdi.12021},
+  publisher = {Wiley-Blackwell},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
