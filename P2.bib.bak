@@ -1,0 +1,71 @@
+% Encoding: UTF-8
+
+@Misc{oxfordquantify,
+  author       = {{Oxford Living Dictionaries}},
+  title        = {quantify - definition of quantify in English | Oxford Dictionaries},
+  howpublished = {https://en.oxforddictionaries.com/definition/quantify},
+  year         = {2017},
+}
+
+@Misc{oxfordself,
+  author       = {{Oxford Living Dictionaries}},
+  title        = {self - define self in English | Oxford Dictionaries},
+  howpublished = {https://en.oxforddictionaries.com/definition/self},
+  year         = {2017},
+}
+
+@Article{polysom,
+  author    = {Behrouz Jafari and Vahid Mohsenin},
+  title     = {Polysomnography},
+  journal   = {Clinics in Chest Medicine},
+  year      = {2010},
+  volume    = {31},
+  number    = {2},
+  pages     = {287--297},
+  month     = {jun},
+  doi       = {10.1016/j.ccm.2010.02.005},
+  publisher = {Elsevier {BV}},
+  url       = {https://www.ncbi.nlm.nih.gov/pubmed/20488287},
+}
+
+@Misc{mayomental,
+  author       = {{Mayo Clinic Staff}},
+  title        = {Mental illness - Mayo Clinic},
+  howpublished = {http://www.mayoclinic.org/diseases-conditions/mental-illness/basics/definition/con-20033813?DSECTION=all\&p=1},
+  year         = {2015},
+}
+
+@Book{bipalid,
+  title     = {Bipolar affektiv lidelse},
+  publisher = {Klinik for Mani og Depression},
+  year      = {2005},
+  author    = {Krista Nielsen Straarup and Rusmus W. Licht},
+  month     = jan,
+}
+
+@Misc{promed,
+  author       = {Lars Vedel Kessing and Sune Straszek},
+  title        = {Bipolar lidelse},
+  howpublished = {https://pro.medicin.dk/sygdomme/sygdom/318434},
+  year         = {2017},
+}
+
+@Book{apadsm,
+  title     = {Diagnostic and Statistical Manual of Mental Disorders},
+  publisher = {American Psychiatric Association},
+  year      = {1994},
+  author    = {{American Psychiatric Association}},
+  address   = {Washington, DC},
+  edition   = {Fourth Edition},
+}
+
+@Book{genanx,
+  title     = {Encyclopedia of Psychopharmacology},
+  publisher = {Springer Nature},
+  year      = {2015},
+  author    = {Malcolm Lader},
+  editor    = {Ian P. Stolerman and Lawrence H. Price},
+  doi       = {10.1007/978-3-642-36172-2},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
