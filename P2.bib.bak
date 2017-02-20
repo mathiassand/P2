@@ -144,4 +144,13 @@
   publisher = {Wiley-Blackwell},
 }
 
+@Article{Fleck_2010,
+  author    = {Rowanne Fleck and Geraldine Fitzpatrick},
+  title     = {Reflecting on reflection},
+  year      = {2010},
+  booktitle = {Proceedings of the 22nd Conference of the Computer-Human Interaction Special Interest Group of Australia on Computer-Human Interaction - {OZCHI} {\textquotesingle}10},
+  doi       = {10.1145/1952222.1952269},
+  publisher = {Association for Computing Machinery ({ACM})},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
