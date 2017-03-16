@@ -114,7 +114,7 @@
 @Misc{actigraph,
   author       = {{ActiGraph Corp}},
   title        = {Sleep Assessment | ActiGraph},
-  howpublished = {http://actigraphcorp.com/solutions/sleep-assessment/},
+  howpublished = {https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3248573/},
   year         = {2017},
 }
 
@@ -144,13 +144,38 @@
   publisher = {Wiley-Blackwell},
 }
 
-@Article{Fleck_2010,
+@Book{evidencebib,
+  title     = {Bipolar Disorder},
+  publisher = {Springer Nature},
+  year      = {2015},
+  author    = {Kostas N. Fountoulakis},
+  doi       = {10.1007/978-3-642-37216-2},
+}
+
+@InProceedings{Fleck_2010,
   author    = {Rowanne Fleck and Geraldine Fitzpatrick},
   title     = {Reflecting on reflection},
-  year      = {2010},
   booktitle = {Proceedings of the 22nd Conference of the Computer-Human Interaction Special Interest Group of Australia on Computer-Human Interaction - {OZCHI} {\textquotesingle}10},
-  doi       = {10.1145/1952222.1952269},
+  year      = {2010},
   publisher = {Association for Computing Machinery ({ACM})},
+  doi       = {10.1145/1952222.1952269},
+}
+
+@Book{idbog,
+  title     = {Interaction Design, Beyond human-computer interaction},
+  publisher = {John Wiley \& Sons Ltd},
+  year      = {2015},
+  author    = {Jenny Preece, Yvonne Rogers and Helen Sharp},
+  isbn      = {978-1-119-02075-2},
+  date      = {2015-02-06},
+  ean       = {9781119020752},
+  url       = {http://www.ebook.de/de/product/23648437/yvonne_rogers_helen_sharp_jenny_preece_interaction_design_beyond_human_computer_interaction.html},
+}
+
+@Misc{skype,
+  author = {Skype},
+  title  = {Skype},
+  year   = {2003},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
