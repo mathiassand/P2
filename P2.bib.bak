@@ -176,6 +176,7 @@
   author = {Skype},
   title  = {Skype},
   year   = {2003},
+  url    = {https://www.skype.com/da/},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
