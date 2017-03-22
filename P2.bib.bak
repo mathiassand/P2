@@ -84,7 +84,7 @@
 @InProceedings{Li_2010,
   author    = {Ian Li and Anind Dey and Jodi Forlizzi},
   title     = {A stage-based model of personal informatics systems},
-  booktitle = {Proceedings of the 28th international conference on Human factors in computing systems - {CHI} {\textquotesingle}10},
+  booktitle = {Proceedings of the 28th international conference on Human factors in computing systems - {CHI} 10},
   year      = {2010},
   publisher = {Association for Computing Machinery ({ACM})},
   doi       = {10.1145/1753326.1753409},
@@ -108,13 +108,6 @@
   author       = {{Inexica Inc.}},
   title        = {iMoodJournal},
   howpublished = {https://play.google.com/store/apps/details?id=com.inexika.imood\&hl=en},
-  year         = {2017},
-}
-
-@Misc{actigraph,
-  author       = {{ActiGraph Corp}},
-  title        = {Sleep Assessment | ActiGraph},
-  howpublished = {https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3248573/},
   year         = {2017},
 }
 
@@ -155,7 +148,7 @@
 @InProceedings{Fleck_2010,
   author    = {Rowanne Fleck and Geraldine Fitzpatrick},
   title     = {Reflecting on reflection},
-  booktitle = {Proceedings of the 22nd Conference of the Computer-Human Interaction Special Interest Group of Australia on Computer-Human Interaction - {OZCHI} {\textquotesingle}10},
+  booktitle = {Proceedings of the 22nd Conference of the Computer-Human Interaction Special Interest Group of Australia on Computer-Human Interaction - {OZCHI} 10},
   year      = {2010},
   publisher = {Association for Computing Machinery ({ACM})},
   doi       = {10.1145/1952222.1952269},
@@ -177,6 +170,26 @@
   title  = {Skype},
   year   = {2003},
   url    = {https://www.skype.com/da/},
+}
+
+@Misc{sundhedpatient,
+  author = {Lars Vedel Kessing},
+  title  = {Mani og bipolar lidelse},
+  month  = jan,
+  year   = {2016},
+  url    = {https://www.sundhed.dk/borger/patienthaandbogen/psyke/sygdomme/mani-og-bipolar-lidelse/mani-og-bipolar-lidelse/},
+}
+
+@Article{JOHN_2012,
+  author    = {DINESH JOHN and PATTY FREEDSON},
+  title     = {{ActiGraph} and Actical Physical Activity Monitors},
+  journal   = {Medicine {\&} Science in Sports {\&} Exercise},
+  year      = {2012},
+  volume    = {44},
+  pages     = {S86--S89},
+  month     = {jan},
+  doi       = {10.1249/MSS.0b013e3182399f5e},
+  publisher = {Ovid Technologies (Wolters Kluwer Health)},
 }
 
 @MastersThesis{4PageMandatory,
