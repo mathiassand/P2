@@ -199,4 +199,42 @@
   url       = {https://www.amazon.com/World-Health-Report-2001-Understanding/dp/9241562013?SubscriptionId=0JYN1NVW651KCA56C102&tag=techkie-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=9241562013},
 }
 
+@Book{depandbip,
+  title     = {Depression of Bipolar Lidelse},
+  publisher = {DepressionsForeningen},
+  year      = {2011},
+  author    = {Charlotte Juul Sørensen and Krista N. Straarup},
+  isbn      = {978-87-988308-3-2},
+  url       = {http://depressionsforeningen.dk/wp-content/uploads/depression-og-bipolar-lidelse.pdf},
+}
+
+@Book{creswell,
+  title     = {Research Design: Qualitative, Quantitative, and Mixed Methods Approaches},
+  publisher = {SAGE Publications, Inc},
+  year      = {2002},
+  author    = {John W. Creswell},
+  isbn      = {0-7619-2441-8},
+}
+
+@Book{SUX,
+  title     = {Sketching User Experiences: The Workbook},
+  publisher = {Elsevier LTD, Oxford},
+  year      = {2012},
+  author    = {Buxton, Bill and Greenberg, Saul and Carpendale, Sheelagh and Marquardt, Nicolai},
+  isbn      = {978-0123819598},
+  date      = {2012-01-11},
+  ean       = {9780123819598},
+}
+
+@InProceedings{,
+}
+
+@Misc{netmarketshare,
+  author       = {NetMarketshare},
+  title        = {Operating system market share},
+  howpublished = {https://www.netmarketshare.com/operating-system-market-share.aspx?qprid=9\&qpcustomb=1\&qpct=2},
+  month        = feb,
+  year         = {2017},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
