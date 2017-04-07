@@ -272,4 +272,32 @@
   year         = {2016},
 }
 
+@Article{Pagliari_2007,
+  author    = {Claudia Pagliari},
+  title     = {Design and Evaluation in {eHealth}: Challenges and Implications for an Interdisciplinary Field},
+  journal   = {Journal of Medical Internet Research},
+  year      = {2007},
+  volume    = {9},
+  number    = {2},
+  pages     = {e15},
+  month     = {may},
+  doi       = {10.2196/jmir.9.2.e15},
+  publisher = {{JMIR} Publications Inc.},
+}
+
+@Book{,
+  title     = {ISO 9241-210(E)},
+  publisher = {International Standardisation Organisation {ISO}},
+  year      = {2010},
+  author    = {ISO},
+  edition   = {1st Edition},
+}
+
+@Misc{fitbit,
+  author       = {Garmin},
+  title        = {Fitbit},
+  howpublished = {https://www.fitbit.com/home},
+  year         = {2017},
+}
+
 @Comment{jabref-meta: databaseType:bibtex;}
