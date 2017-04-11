@@ -173,6 +173,26 @@
   url          = {https://www.skype.com/da/},
 }
 
+@Misc{sundhedpatient,
+  author = {Lars Vedel Kessing},
+  title  = {Mani og bipolar lidelse},
+  month  = jan,
+  year   = {2016},
+  url    = {https://www.sundhed.dk/borger/patienthaandbogen/psyke/sygdomme/mani-og-bipolar-lidelse/mani-og-bipolar-lidelse/},
+}
+
+@Article{JOHN_2012,
+  author    = {DINESH JOHN and PATTY FREEDSON},
+  title     = {{ActiGraph} and Actical Physical Activity Monitors},
+  journal   = {Medicine {\&} Science in Sports {\&} Exercise},
+  year      = {2012},
+  volume    = {44},
+  pages     = {S86--S89},
+  month     = {jan},
+  doi       = {10.1249/MSS.0b013e3182399f5e},
+  publisher = {Ovid Technologies (Wolters Kluwer Health)},
+}
+
 @MastersThesis{4PageMandatory,
   author = {Stephanie Githa Nadarajah and Peder Walz Pedersen},
   title  = {Designing for Reflection in Telehealth: Chronic Obstructive Pulmonary Disease Patients as Self-Trackers},
