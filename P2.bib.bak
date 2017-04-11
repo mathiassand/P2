@@ -166,10 +166,11 @@
 }
 
 @Misc{skype,
-  author = {Skype},
-  title  = {Skype},
-  year   = {2003},
-  url    = {https://www.skype.com/da/},
+  author       = {Skype and Microsoft},
+  title        = {Skype},
+  howpublished = {https://www.skype.com/en/},
+  year         = {2017},
+  url          = {https://www.skype.com/da/},
 }
 
 @Misc{sundhedpatient,
@@ -196,6 +197,127 @@
   author = {Stephanie Githa Nadarajah and Peder Walz Pedersen},
   title  = {Designing for Reflection in Telehealth: Chronic Obstructive Pulmonary Disease Patients as Self-Trackers},
   school = {Aalborg University},
+}
+
+@Article{JOHN_2012,
+  author    = {DINESH JOHN and PATTY FREEDSON},
+  title     = {{ActiGraph} and Actical Physical Activity Monitors},
+  journal   = {Medicine {\&} Science in Sports {\&} Exercise},
+  year      = {2012},
+  volume    = {44},
+  pages     = {S86--S89},
+  month     = {jan},
+  doi       = {10.1249/MSS.0b013e3182399f5e},
+  publisher = {Ovid Technologies (Wolters Kluwer Health)},
+}
+
+@Book{WHO,
+  title     = {The World Health Report 2001: Mental Health: New Understanding, New Hope (World Health Reports)},
+  publisher = {World Health Organization},
+  year      = {2001},
+  author    = {{World Health Organization}},
+  isbn      = {9241562013},
+  url       = {https://www.amazon.com/World-Health-Report-2001-Understanding/dp/9241562013?SubscriptionId=0JYN1NVW651KCA56C102&tag=techkie-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=9241562013},
+}
+
+@Book{depandbip,
+  title     = {Depression of Bipolar Lidelse},
+  publisher = {DepressionsForeningen},
+  year      = {2011},
+  author    = {Charlotte Juul Sørensen and Krista N. Straarup},
+  isbn      = {978-87-988308-3-2},
+  url       = {http://depressionsforeningen.dk/wp-content/uploads/depression-og-bipolar-lidelse.pdf},
+}
+
+@Book{creswell,
+  title     = {Research Design: Qualitative, Quantitative, and Mixed Methods Approaches},
+  publisher = {SAGE Publications, Inc},
+  year      = {2002},
+  author    = {John W. Creswell},
+  isbn      = {0-7619-2441-8},
+}
+
+@Book{SUX,
+  title     = {Sketching User Experiences: The Workbook},
+  publisher = {Elsevier LTD, Oxford},
+  year      = {2012},
+  author    = {Buxton, Bill and Greenberg, Saul and Carpendale, Sheelagh and Marquardt, Nicolai},
+  isbn      = {978-0123819598},
+  date      = {2012-01-11},
+  ean       = {9780123819598},
+}
+
+@Misc{netmarketshare,
+  author       = {NetMarketshare},
+  title        = {Operating system market share},
+  howpublished = {https://www.netmarketshare.com/operating-system-market-share.aspx?qprid=9\&qpcustomb=1\&qpct=2},
+  month        = feb,
+  year         = {2017},
+}
+
+@InProceedings{Consolvo_2009,
+  author    = {Sunny Consolvo and David W. McDonald and James A. Landay},
+  title     = {Theory-driven design strategies for technologies that support behavior change in everyday life},
+  booktitle = {Proceedings of the 27th international conference on Human factors in computing systems - {CHI} 09},
+  year      = {2009},
+  publisher = {Association for Computing Machinery ({ACM})},
+  doi       = {10.1145/1518701.1518766},
+}
+
+@Book{usability,
+  title     = {The Research-Based Web Design \& Usability Guidelines, Enlarged/Expanded edition},
+  publisher = {Washington: U.S. Government Printing Office},
+  year      = {2006},
+  author    = {{U.S. Dept. of Health and Human Services}},
+}
+
+@Article{Heckers_2016,
+  author    = {Stephan Heckers and Deanna M. Barch and Juan Bustillo and Wolfgang Gaebel and Raquel Gur and Dolores Malaspina and Michael J. Owen and Susan Schultz and Rajiv Tandon and Ming Tsuang and Jim Van Os and William Carpenter},
+  title     = {Structure of the Psychotic Disorders Classification in {DSM}-5},
+  journal   = {{FOCUS}},
+  year      = {2016},
+  volume    = {14},
+  number    = {3},
+  pages     = {366--369},
+  month     = {jul},
+  doi       = {10.1176/appi.focus.140307},
+  publisher = {American Psychiatric Publishing},
+}
+
+@Misc{sundhedpatient,
+  author       = {Lars Vedel Kessing and John Sahl Andersen and Hans Christian Kjeldsen and {sundhed.dk}},
+  title        = {Lægehåndbogen - Mani of Bipolar Lidelse},
+  howpublished = {https://www.sundhed.dk/sundhedsfaglig/laegehaandbogen/psykiatri/tilstande-og-sygdomme/mani-og-bipolar-lidelse/mani-og-bipolar-lidelse/},
+  month        = aug,
+  year         = {2016},
+}
+
+@Article{Pagliari_2007,
+  author    = {Claudia Pagliari},
+  title     = {Design and Evaluation in {eHealth}: Challenges and Implications for an Interdisciplinary Field},
+  journal   = {Journal of Medical Internet Research},
+  year      = {2007},
+  volume    = {9},
+  number    = {2},
+  pages     = {e15},
+  month     = {may},
+  doi       = {10.2196/jmir.9.2.e15},
+  publisher = {{JMIR} Publications Inc.},
+}
+
+@Book{,
+  title     = {ISO 9241-210(E)},
+  publisher = {International Standardisation Organisation {ISO}},
+  year      = {2010},
+  author    = {ISO},
+  edition   = {1st Edition},
+}
+
+@Misc{fitbit,
+  author       = {Garmin},
+  title        = {Fitbit},
+  howpublished = {https://www.fitbit.com/home},
+  year         = {2017},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
