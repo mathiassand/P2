@@ -1,5 +1,6 @@
 package com.p2prototype.b217.moodprototype;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -12,8 +13,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
-    public void testMethod(View view)
+    public void moodButtonPressed(View view)
     {
-        Toast.makeText(this,"It works!",Toast.LENGTH_LONG).show();
+        Intent openMoodScreen = new Intent(this,moodLogging.class);
+        startActivity(openMoodScreen);
     }
 }

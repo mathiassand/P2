@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Mood Prototype</string>
+    <string name="mood_logging">Stemningsregistrering</string>
+    <string name="main_activity">Hovedmenu</string>
 </resources>
