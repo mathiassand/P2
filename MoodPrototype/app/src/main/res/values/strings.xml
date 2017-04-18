@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">Mood Prototype</string>
-    <string name="mood_logging">Stemningsregistrering</string>
-    <string name="main_activity">Hovedmenu</string>
+    <string name="mood_logging">Stemningsleje</string>
+    <string name="main_activity">Stemningsregistrering</string>
+    <string name="event_mood_screen">Tilføj Begivenhed...</string>
+    <string name="sleep">Søvn</string>
+    <string name="weight">Vægt</string>
+    <string name="medicine">Tilføj Medicin...</string>
+    <string name="amount">Antal...</string>
 </resources>
