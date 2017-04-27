@@ -114,7 +114,8 @@
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
             app:srcCompat="@mipmap/info_button"
-            android:background="@color/white"/>
+            android:background="@color/white"
+            android:onClick="InfoButtonPressed"/>
             <TextView
                 android:id="@+id/infoText"
                 android:layout_width="wrap_content"

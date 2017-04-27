@@ -22,7 +22,8 @@
         <activity
             android:name=".moodLogging"
             android:label="@string/mood_logging"></activity>
-        <activity android:name=".InfoActivity"></activity>
+        <activity android:name=".InfoActivity"
+            ></activity>
     </application>
 
 </manifest>

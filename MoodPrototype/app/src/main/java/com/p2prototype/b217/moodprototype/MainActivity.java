@@ -18,4 +18,10 @@ public class MainActivity extends AppCompatActivity {
         Intent openMoodScreen = new Intent(this,moodLogging.class);
         startActivity(openMoodScreen);
     }
+    public void InfoButtonPressed(View view){
+
+
+        Intent openInfoScreen = new Intent(this,InfoActivity.class);
+        startActivity(openInfoScreen);
+    }
 }
