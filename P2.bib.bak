@@ -1,0 +1,295 @@
+% Encoding: UTF-8
+
+@Misc{oxfordquantify,
+  author       = {{Oxford Living Dictionaries}},
+  title        = {quantify - definition of quantify in English | Oxford Dictionaries},
+  howpublished = {https://en.oxforddictionaries.com/definition/quantify},
+  year         = {2017},
+}
+
+@Misc{oxfordself,
+  author       = {{Oxford Living Dictionaries}},
+  title        = {self - define self in English | Oxford Dictionaries},
+  howpublished = {https://en.oxforddictionaries.com/definition/self},
+  year         = {2017},
+}
+
+@Article{polysom,
+  author    = {Behrouz Jafari and Vahid Mohsenin},
+  title     = {Polysomnography},
+  journal   = {Clinics in Chest Medicine},
+  year      = {2010},
+  volume    = {31},
+  number    = {2},
+  pages     = {287--297},
+  month     = {jun},
+  doi       = {10.1016/j.ccm.2010.02.005},
+  publisher = {Elsevier {BV}},
+  url       = {https://www.ncbi.nlm.nih.gov/pubmed/20488287},
+}
+
+@Misc{mayomental,
+  author       = {{Mayo Clinic Staff}},
+  title        = {Mental illness - Mayo Clinic},
+  howpublished = {http://www.mayoclinic.org/diseases-conditions/mental-illness/basics/definition/con-20033813?DSECTION=all\&p=1},
+  year         = {2015},
+}
+
+@Book{bipalid,
+  title     = {Bipolar affektiv lidelse},
+  publisher = {Klinik for Mani og Depression},
+  year      = {2005},
+  author    = {Krista Nielsen Straarup and Rusmus W. Licht},
+  month     = jan,
+}
+
+@Misc{promed,
+  author       = {Lars Vedel Kessing and Sune Straszek},
+  title        = {Bipolar lidelse},
+  howpublished = {https://pro.medicin.dk/sygdomme/sygdom/318434},
+  year         = {2017},
+}
+
+@Book{apadsm,
+  title     = {Diagnostic and Statistical Manual of Mental Disorders},
+  publisher = {American Psychiatric Association},
+  year      = {1994},
+  author    = {{American Psychiatric Association}},
+  address   = {Washington, DC},
+  edition   = {Fourth Edition},
+}
+
+@Book{genanx,
+  title     = {Encyclopedia of Psychopharmacology},
+  publisher = {Springer Nature},
+  year      = {2015},
+  author    = {Malcolm Lader},
+  editor    = {Ian P. Stolerman and Lawrence H. Price},
+  doi       = {10.1007/978-3-642-36172-2},
+}
+
+@Article{copd,
+  author    = {Jenny Ure and Hilary Pinnock and Janet Hanley and Gillian Kidd and Emily McCall Smith and Alex Tarling and Claudia Pagliari and Aziz Sheikh and William MacNee and Brian McKinstry},
+  title     = {Piloting tele-monitoring in COPD: a mixed methods exploration of issues in design and implementation},
+  journal   = {Primary Care Respiratory Journal},
+  year      = {2011},
+  volume    = {21},
+  number    = {1},
+  pages     = {57--64},
+  month     = {jul},
+  doi       = {10.4104/pcrj.2011.00065},
+  publisher = {Springer Nature},
+}
+
+@InProceedings{Li_2010,
+  author    = {Ian Li and Anind Dey and Jodi Forlizzi},
+  title     = {A stage-based model of personal informatics systems},
+  booktitle = {Proceedings of the 28th international conference on Human factors in computing systems - {CHI} 10},
+  year      = {2010},
+  publisher = {Association for Computing Machinery ({ACM})},
+  doi       = {10.1145/1753326.1753409},
+}
+
+@Misc{eMoods,
+  author       = {{Yottaram LLC}},
+  title        = {eMoods Bipolar Mood Tracker},
+  howpublished = {https://play.google.com/store/apps/details?id=my.tracker\&hl=en},
+  year         = {2017},
+}
+
+@Misc{MoodLog,
+  author       = {{AR Productions}},
+  title        = {Mood Log},
+  howpublished = {https://play.google.com/store/apps/details?id=arproductions.andrew.moodlog\&hl=en},
+  year         = {2017},
+}
+
+@Misc{iMood,
+  author       = {{Inexica Inc.}},
+  title        = {iMoodJournal},
+  howpublished = {https://play.google.com/store/apps/details?id=com.inexika.imood\&hl=en},
+  year         = {2017},
+}
+
+@Article{sleep,
+  author    = {Polina Eidelman and Lisa S. Talbot and June Gruber and Allison G. Harvey},
+  title     = {Sleep, illness course, and concurrent symptoms in inter-episode bipolar disorder},
+  journal   = {Journal of Behavior Therapy and Experimental Psychiatry},
+  year      = {2010},
+  volume    = {41},
+  number    = {2},
+  pages     = {145--149},
+  month     = {jun},
+  doi       = {10.1016/j.jbtep.2009.11.007},
+  publisher = {Elsevier {BV}},
+}
+
+@Article{sleepdisturbance,
+  author    = {Katherine A Kaplan and Lisa S Talbot and June Gruber and Allison G Harvey},
+  title     = {Evaluating sleep in bipolar disorder: comparison between actigraphy, polysomnography, and sleep diary},
+  journal   = {Bipolar Disorders},
+  year      = {2012},
+  volume    = {14},
+  number    = {8},
+  pages     = {870--879},
+  month     = {nov},
+  doi       = {10.1111/bdi.12021},
+  publisher = {Wiley-Blackwell},
+}
+
+@Book{evidencebib,
+  title     = {Bipolar Disorder},
+  publisher = {Springer Nature},
+  year      = {2015},
+  author    = {Kostas N. Fountoulakis},
+  doi       = {10.1007/978-3-642-37216-2},
+}
+
+@InProceedings{Fleck_2010,
+  author    = {Rowanne Fleck and Geraldine Fitzpatrick},
+  title     = {Reflecting on reflection},
+  booktitle = {Proceedings of the 22nd Conference of the Computer-Human Interaction Special Interest Group of Australia on Computer-Human Interaction - {OZCHI} 10},
+  year      = {2010},
+  publisher = {Association for Computing Machinery ({ACM})},
+  doi       = {10.1145/1952222.1952269},
+}
+
+@Book{idbog,
+  title     = {Interaction Design, Beyond human-computer interaction},
+  publisher = {John Wiley \& Sons Ltd},
+  year      = {2015},
+  author    = {Jenny Preece, Yvonne Rogers and Helen Sharp},
+  isbn      = {978-1-119-02075-2},
+  date      = {2015-02-06},
+  ean       = {9781119020752},
+  url       = {http://www.ebook.de/de/product/23648437/yvonne_rogers_helen_sharp_jenny_preece_interaction_design_beyond_human_computer_interaction.html},
+}
+
+@Misc{skype,
+  author       = {Skype and Microsoft},
+  title        = {Skype},
+  howpublished = {https://www.skype.com/en/},
+  year         = {2017},
+  url          = {https://www.skype.com/da/},
+}
+
+@Misc{sundhedpatient,
+  author = {Lars Vedel Kessing},
+  title  = {Mani og bipolar lidelse},
+  month  = jan,
+  year   = {2016},
+  url    = {https://www.sundhed.dk/borger/patienthaandbogen/psyke/sygdomme/mani-og-bipolar-lidelse/mani-og-bipolar-lidelse/},
+}
+
+@Article{JOHN_2012,
+  author    = {DINESH JOHN and PATTY FREEDSON},
+  title     = {{ActiGraph} and Actical Physical Activity Monitors},
+  journal   = {Medicine {\&} Science in Sports {\&} Exercise},
+  year      = {2012},
+  volume    = {44},
+  pages     = {S86--S89},
+  month     = {jan},
+  doi       = {10.1249/MSS.0b013e3182399f5e},
+  publisher = {Ovid Technologies (Wolters Kluwer Health)},
+}
+
+@MastersThesis{4PageMandatory,
+  author = {Stephanie Githa Nadarajah and Peder Walz Pedersen},
+  title  = {Designing for Reflection in Telehealth: Chronic Obstructive Pulmonary Disease Patients as Self-Trackers},
+  school = {Aalborg University},
+}
+
+@Article{JOHN_2012,
+  author    = {DINESH JOHN and PATTY FREEDSON},
+  title     = {{ActiGraph} and Actical Physical Activity Monitors},
+  journal   = {Medicine {\&} Science in Sports {\&} Exercise},
+  year      = {2012},
+  volume    = {44},
+  pages     = {S86--S89},
+  month     = {jan},
+  doi       = {10.1249/MSS.0b013e3182399f5e},
+  publisher = {Ovid Technologies (Wolters Kluwer Health)},
+}
+
+@Book{WHO,
+  title     = {The World Health Report 2001: Mental Health: New Understanding, New Hope (World Health Reports)},
+  publisher = {World Health Organization},
+  year      = {2001},
+  author    = {{World Health Organization}},
+  isbn      = {9241562013},
+  url       = {https://www.amazon.com/World-Health-Report-2001-Understanding/dp/9241562013?SubscriptionId=0JYN1NVW651KCA56C102&tag=techkie-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=9241562013},
+}
+
+@Book{depandbip,
+  title     = {Depression of Bipolar Lidelse},
+  publisher = {DepressionsForeningen},
+  year      = {2011},
+  author    = {Charlotte Juul Sørensen and Krista N. Straarup},
+  isbn      = {978-87-988308-3-2},
+  url       = {http://depressionsforeningen.dk/wp-content/uploads/depression-og-bipolar-lidelse.pdf},
+}
+
+@Book{creswell,
+  title     = {Research Design: Qualitative, Quantitative, and Mixed Methods Approaches},
+  publisher = {SAGE Publications, Inc},
+  year      = {2002},
+  author    = {John W. Creswell},
+  isbn      = {0-7619-2441-8},
+}
+
+@Book{SUX,
+  title     = {Sketching User Experiences: The Workbook},
+  publisher = {Elsevier LTD, Oxford},
+  year      = {2012},
+  author    = {Buxton, Bill and Greenberg, Saul and Carpendale, Sheelagh and Marquardt, Nicolai},
+  isbn      = {978-0123819598},
+  date      = {2012-01-11},
+  ean       = {9780123819598},
+}
+
+@Misc{netmarketshare,
+  author       = {NetMarketshare},
+  title        = {Operating system market share},
+  howpublished = {https://www.netmarketshare.com/operating-system-market-share.aspx?qprid=9\&qpcustomb=1\&qpct=2},
+  month        = feb,
+  year         = {2017},
+}
+
+@InProceedings{Consolvo_2009,
+  author    = {Sunny Consolvo and David W. McDonald and James A. Landay},
+  title     = {Theory-driven design strategies for technologies that support behavior change in everyday life},
+  booktitle = {Proceedings of the 27th international conference on Human factors in computing systems - {CHI} 09},
+  year      = {2009},
+  publisher = {Association for Computing Machinery ({ACM})},
+  doi       = {10.1145/1518701.1518766},
+}
+
+@Book{usability,
+  title     = {The Research-Based Web Design \& Usability Guidelines, Enlarged/Expanded edition},
+  publisher = {Washington: U.S. Government Printing Office},
+  year      = {2006},
+  author    = {{U.S. Dept. of Health and Human Services}},
+}
+
+@Article{Heckers_2016,
+  author    = {Stephan Heckers and Deanna M. Barch and Juan Bustillo and Wolfgang Gaebel and Raquel Gur and Dolores Malaspina and Michael J. Owen and Susan Schultz and Rajiv Tandon and Ming Tsuang and Jim Van Os and William Carpenter},
+  title     = {Structure of the Psychotic Disorders Classification in {DSM}-5},
+  journal   = {{FOCUS}},
+  year      = {2016},
+  volume    = {14},
+  number    = {3},
+  pages     = {366--369},
+  month     = {jul},
+  doi       = {10.1176/appi.focus.140307},
+  publisher = {American Psychiatric Publishing},
+}
+
+@Misc{sundhedpatient,
+  author       = {Lars Vedel Kessing and John Sahl Andersen and Hans Christian Kjeldsen and {sundhed.dk}},
+  title        = {Lægehåndbogen - Mani of Bipolar Lidelse},
+  howpublished = {https://www.sundhed.dk/sundhedsfaglig/laegehaandbogen/psykiatri/tilstande-og-sygdomme/mani-og-bipolar-lidelse/mani-og-bipolar-lidelse/},
+  month        = aug,
+  year         = {2016},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
