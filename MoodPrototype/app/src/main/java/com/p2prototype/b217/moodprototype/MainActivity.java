@@ -1,10 +1,9 @@
 package com.p2prototype.b217.moodprototype;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,5 +22,11 @@ public class MainActivity extends AppCompatActivity {
 
         Intent openInfoScreen = new Intent(this,InfoActivity.class);
         startActivity(openInfoScreen);
+    }
+
+    public void SettingsButtonPressed(View view) {
+
+        Intent openSettingScreen = new Intent(this,SettingsActivity.class);
+        startActivity(openSettingScreen);
     }
 }

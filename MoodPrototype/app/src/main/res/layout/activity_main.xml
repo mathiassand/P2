@@ -49,6 +49,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
+            android:onClick="SettingsButtonPressed"
             app:srcCompat="@mipmap/settings_button"
             android:background="@color/white"/>
             <TextView
