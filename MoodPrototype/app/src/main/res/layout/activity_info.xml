@@ -29,7 +29,7 @@
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="24dp"
-        android:text="Skriv om den here plz . not me dont want to you do it.\n fsfsf \n fdsfsfsf \n \nf dasdsaa"
+        android:text=""
         app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
