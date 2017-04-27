@@ -22,10 +22,11 @@
         <activity
             android:name=".moodLogging"
             android:label="@string/mood_logging" />
-        <activity android:name=".InfoActivity" />
+        <activity android:name=".InfoActivity"
+            android:label="Info"/>
         <activity
             android:name=".SettingsActivity"
-            android:label="@string/title_activity_settings"></activity>
+            android:label="Indstillinger"></activity>
     </application>
 
 </manifest>
