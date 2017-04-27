@@ -11,18 +11,18 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:screenOrientation="portrait"
-            android:label="@string/main_activity">
+            android:label="@string/main_activity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".moodLogging"
-            android:label="@string/mood_logging">
-
-        </activity>
+        <activity
+            android:name=".moodLogging"
+            android:label="@string/mood_logging"></activity>
+        <activity android:name=".InfoActivity"></activity>
     </application>
 
 </manifest>
