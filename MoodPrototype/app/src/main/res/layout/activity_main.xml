@@ -86,7 +86,8 @@
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
             app:srcCompat="@mipmap/stat_button"
-            android:background="@color/white"/>
+            android:background="@color/white"
+            android:onClick="HistorikButtonPressed"/>
         <TextView
             android:id="@+id/statText"
             android:layout_width="wrap_content"

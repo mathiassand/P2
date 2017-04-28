@@ -31,4 +31,9 @@ public class MainActivity extends AppCompatActivity {
         Intent openSettingScreen = new Intent(this,SettingsActivity.class);
         startActivity(openSettingScreen);
     }
+    public void HistorikButtonPressed (View view){
+        Intent openHistorikScreen = new Intent(this, HistorikActivity.class);
+        startActivity(openHistorikScreen);
+
+    }
 }
