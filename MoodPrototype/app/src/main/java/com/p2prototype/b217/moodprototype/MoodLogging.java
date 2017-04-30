@@ -38,10 +38,6 @@ public class MoodLogging extends AppCompatActivity {
         weightKg.setMaxValue(200);
         weightComma.setMaxValue(9);
         weightComma.setMinValue(0);
-        hoursSleptNp.setOnFocusChangeListener(keyboardAwayListener);
-        minutesSleptNp.setOnFocusChangeListener(keyboardAwayListener);
-        weightKg.setOnFocusChangeListener(keyboardAwayListener);
-        weightComma.setOnFocusChangeListener(keyboardAwayListener);
     }
     public void hideKeyboard(View view) {
         InputMethodManager inputMethodManager =(InputMethodManager)getSystemService(Activity.INPUT_METHOD_SERVICE);
