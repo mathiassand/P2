@@ -6,6 +6,13 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 public class moodLogging extends AppCompatActivity {
+    int mood;
+    int anxiety;
+    int sleep;
+    float weight;
+    String note;
+    Event[] eventList = new Event[0];
+    Medicine[] medicineList = new Medicine[0];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
