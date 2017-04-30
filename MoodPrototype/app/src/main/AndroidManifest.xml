@@ -20,7 +20,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".moodLogging"
+            android:name=".MoodLogging"
             android:label="@string/mood_logging" />
         <activity
             android:name=".InfoActivity"
@@ -28,7 +28,7 @@
         <activity
             android:name=".SettingsActivity"
             android:label="Indstillinger" />
-        <activity android:name=".HistorikActivity"></activity>
+        <activity android:name=".HistorikActivity"/>
     </application>
 
 </manifest>

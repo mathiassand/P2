@@ -2,12 +2,15 @@
     <string name="app_name">Mood Prototype</string>
     <string name="mood_logging">Stemningsleje</string>
     <string name="main_activity">Stemningsregistrering</string>
-    <string name="event_mood_screen">Tilføj Begivenhed...</string>
+    <string name="event_mood_screen">Tilføj Begivenhed&#8230;</string>
     <string name="sleep">Søvn</string>
     <string name="weight">Vægt</string>
-    <string name="medicine">Tilføj Medicin...</string>
-    <string name="amount">Antal...</string>
+    <string name="medicine">Tilføj Medicin&#8230;</string>
+    <string name="amount">Antal&#8230;</string>
     <string name="title_activity_settings">Settings</string>
+    <string name="register">Registrer</string>
+    <string name="anxiety">Angst</string>
+    <string name="notes">Skriv noter&#8230;</string>
 
     <!-- Strings related to Settings -->
 
