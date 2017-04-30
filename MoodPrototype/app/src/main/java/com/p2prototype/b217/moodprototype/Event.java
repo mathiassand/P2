@@ -11,4 +11,12 @@ public class Event {
         this.eventName = eventName;
         this.flagColor = flagColor;
     }
+
+    public String getEventName() {
+        return eventName;
+    }
+
+    public int getFlagColor() {
+        return flagColor;
+    }
 }

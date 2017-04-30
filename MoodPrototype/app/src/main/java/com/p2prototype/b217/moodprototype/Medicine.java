@@ -11,4 +11,12 @@ public class Medicine {
         this.medicineName = medicineName;
         this. pillColor = pillColor;
     }
+
+    public String getMedicineName() {
+        return medicineName;
+    }
+
+    public int getPillColor() {
+        return pillColor;
+    }
 }

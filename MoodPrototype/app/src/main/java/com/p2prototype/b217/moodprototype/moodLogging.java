@@ -6,13 +6,16 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 public class moodLogging extends AppCompatActivity {
+    //Til VisualObject
     int mood;
     int anxiety;
-    int sleep;
+    int sleepHours;
+    int sleepMinutes;
     float weight;
     String note;
     Event[] eventList = new Event[0];
     Medicine[] medicineList = new Medicine[0];
+    VisualObject[] visualisation = new VisualObject[0];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,5 +33,10 @@ public class moodLogging extends AppCompatActivity {
     }
     public boolean onCreateOptionsMenu(Menu menu) {
         return true;
+    }
+
+    public void registerButton(){
+        //visualisation[] = new VisualObject(mood, anxiety, sleepHours, sleepMinutes, weight, note,
+        //eventList[].getEventName, eventList[].getFlagColor, medicineList[].getMedicineName, medicineList[].getPillColor)
     }
 }
