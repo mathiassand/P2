@@ -9,7 +9,7 @@ public class Medicine {
     int pillColor;
     public Medicine(String medicineName, int pillColor){
         this.medicineName = medicineName;
-        this. pillColor = pillColor;
+        this.pillColor = pillColor;
     }
 
     public String getMedicineName() {

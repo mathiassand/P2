@@ -36,7 +36,7 @@
             android:textSize="16sp" />
 
         <SeekBar
-            android:id="@+id/moodSlider"
+            android:id="@+id/mood_slider"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/mood_slider_gradient"
@@ -81,6 +81,7 @@
             android:textSize="16sp" />
 
         <SeekBar
+            android:id="@+id/anxiety_slider"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/anxiety_slider_gradient"
