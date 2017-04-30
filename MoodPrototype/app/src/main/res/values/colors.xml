@@ -10,4 +10,5 @@
     <color name="gradient_mid">#FFFF00</color>
     <color name="gradient_end">#0000FF</color>
     <color name="transparent">#00000000</color>
+    <color name="regbutton_color">#5800B5</color>
 </resources>

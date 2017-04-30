@@ -4,7 +4,7 @@ package com.p2prototype.b217.moodprototype;
  * Created by Anders on 30/04/2017.
  */
 
-public class VisualObject extends moodLogging{
+public class VisualObject extends MoodLogging{
 
     public VisualObject(int mood, int anxiety, int sleepHours, int sleepMinutes, float weight,
                         String note, String eventName, int flagColor, String medicineName,

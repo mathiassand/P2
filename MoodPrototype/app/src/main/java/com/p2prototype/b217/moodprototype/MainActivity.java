@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void moodButtonPressed(View view)
     {
-        Intent openMoodScreen = new Intent(this,moodLogging.class);
+        Intent openMoodScreen = new Intent(this,MoodLogging.class);
         startActivity(openMoodScreen);
     }
     public void InfoButtonPressed(View view){
