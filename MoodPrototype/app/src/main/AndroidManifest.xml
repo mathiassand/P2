@@ -21,10 +21,12 @@
         </activity>
         <activity
             android:name=".MoodLogging"
-            android:label="@string/mood_logging" />
+            android:label="@string/mood_logging"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".InfoActivity"
-            android:label="Info" />
+            android:label="Info"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".SettingsActivity"
             android:label="Indstillinger" />

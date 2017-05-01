@@ -315,6 +315,7 @@
         android:textSize="24sp"
         android:textAllCaps="false"
         android:background="@color/regbutton_color"
+        android:onClick="SaveData"
         />
 </RelativeLayout>
 </ScrollView>
