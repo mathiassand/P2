@@ -3,7 +3,7 @@
     <string name="mood_logging">Stemningsleje</string>
     <string name="main_activity">Stemningsregistrering</string>
     <string name="event_mood_screen">Tilføj Begivenhed&#8230;</string>
-    <string name="sleep">Søvn</string>
+    <string name="sleep">Timer sovet</string>
     <string name="weight">Vægt</string>
     <string name="medicine">Tilføj Medicin&#8230;</string>
     <string name="amount">Antal&#8230;</string>
