@@ -4,19 +4,23 @@
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginRight="16dp"
+    android:layout_marginLeft="16dp"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp">
 
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     tools:context="com.p2prototype.b217.moodprototype.InfoActivity">
 
 
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="211dp"
-        android:layout_height="34dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="16dp"
@@ -32,8 +36,8 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="365dp"
-        android:layout_height="115dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:text="Denne app er lavet til mennesker der har bipolar affektiv lidelse. Formålet med brugen af denne app er, at opnå mere viden om sig selv så man i fremtiden er i stand til at undgå seriøse udsving i sit humør. Dette gøres ved at registrere sit humør, og derefter indtaste forskellig data så man kan se hvordan det hænger sammen med sit humør. "
@@ -48,8 +52,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="242dp"
-        android:layout_height="69dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
         app:srcCompat="@drawable/mood_slider_gradient"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -60,8 +64,8 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="365dp"
-        android:layout_height="141dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginRight="8dp"
         android:layout_marginLeft="8dp"
         android:text="Ovenfor ses en slider, som går fra blå til gul, og derefter til rød. Denne slider bruges til at indikere sit humør. Den blå farve repræsentere deppresivt humør. Den røde farve repræsenterer manisk humør. Des mørkere den røde eller den blå farve er, des mere manisk eller depressiv føler man sig. Den gule farve i midten indikerer at man har et stabilt humør. Sæt blot slideren ved det humør man føler man har oplevet."
@@ -76,8 +80,8 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="365dp"
-        android:layout_height="74dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="Hello there"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:layout_marginRight="8dp"
