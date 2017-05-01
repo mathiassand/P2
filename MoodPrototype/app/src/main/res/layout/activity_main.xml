@@ -49,6 +49,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
+            android:onClick="SettingsButtonPressed"
             app:srcCompat="@mipmap/settings_button"
             android:background="@color/white"/>
             <TextView
@@ -85,7 +86,8 @@
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
             app:srcCompat="@mipmap/stat_button"
-            android:background="@color/white"/>
+            android:background="@color/white"
+            android:onClick="HistorikButtonPressed"/>
         <TextView
             android:id="@+id/statText"
             android:layout_width="wrap_content"
@@ -114,7 +116,8 @@
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
             app:srcCompat="@mipmap/info_button"
-            android:background="@color/white"/>
+            android:background="@color/white"
+            android:onClick="InfoButtonPressed"/>
             <TextView
                 android:id="@+id/infoText"
                 android:layout_width="wrap_content"

@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+<RelativeLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusableInTouchMode="true"
+    android:clickable="true">
 
     <LinearLayout
         android:id="@+id/mood_slider_linear"
@@ -22,7 +27,8 @@
             android:id="@+id/mood_slider_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="top"
+            android:layout_gravity="center"
+            android:gravity="center"
             android:layout_marginBottom="5dp"
             android:text="@string/mood_logging"
             android:textAlignment="center"
@@ -30,11 +36,15 @@
             android:textSize="16sp" />
 
         <SeekBar
-            android:id="@+id/moodSlider"
+            android:id="@+id/mood_slider"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/mood_slider_gradient"
             android:padding="0dp"
+            android:paddingEnd="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:paddingStart="0dp"
             android:progress="50"
             android:progressDrawable="@drawable/mood_slider_progress"
             android:thumb="@drawable/mood_thumb" />
@@ -63,16 +73,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
-            android:text="Angst"
+            android:text="@string/anxiety"
+            android:layout_gravity="center"
+            android:gravity="center"
             android:textAlignment="center"
             android:textColor="@color/black"
             android:textSize="16sp" />
 
         <SeekBar
+            android:id="@+id/anxiety_slider"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/anxiety_slider_gradient"
             android:padding="0dp"
+            android:paddingEnd="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:paddingStart="0dp"
             android:progress="0"
             android:progressDrawable="@drawable/mood_slider_progress"
             android:thumb="@drawable/anxiety_thumb" />
@@ -100,6 +117,8 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
             android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
             android:layout_weight="50"
             android:text="@string/sleep"
             android:textAlignment="center"
@@ -109,6 +128,8 @@
         <View
             android:layout_width="2dp"
             android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
             android:background="@android:color/darker_gray" />
 
         <TextView
@@ -117,6 +138,8 @@
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
             android:layout_weight="50"
+            android:layout_gravity="center"
+            android:gravity="center"
             android:text="@string/weight"
             android:textAlignment="center"
             android:textColor="@color/black"
@@ -138,15 +161,24 @@
             >
 
             <NumberPicker
+                android:id="@+id/sleep_picker_1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="50">
 
             </NumberPicker>
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:layout_gravity="center"
+                android:descendantFocusability="blocksDescendants"
+                android:gravity="center"/>
             <NumberPicker
+                android:id="@+id/sleep_picker_2"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants"
                 android:layout_weight="50">
 
             </NumberPicker>
@@ -167,15 +199,24 @@
             android:paddingRight="20dp">
 
             <NumberPicker
+                android:id="@+id/weight_picker_1"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants"
                 android:layout_weight="50">
 
             </NumberPicker>
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=","
+                android:layout_gravity="center"
+                android:gravity="center"/>
             <NumberPicker
+                android:id="@+id/weight_picker_2"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
+                android:descendantFocusability="blocksDescendants"
                 android:layout_weight="50">
 
             </NumberPicker>
@@ -195,11 +236,15 @@
         android:background="@android:color/darker_gray"
         android:layout_below="@id/sleep_weight_separator_1"/>
     <LinearLayout
-        android:id="@+id/medicine_linear"
+        android:id="@+id/medicine_and_event_linear"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:orientation="horizontal"
-        android:layout_below="@id/sleep_weight_separator_2">
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sleep_weight_separator_2"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
         <Button
             android:id="@+id/medicine_button"
             android:layout_width="0dp"
@@ -214,6 +259,62 @@
             android:text="@string/amount"
             android:textAllCaps="false"
             android:layout_weight="15"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
             />
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="15">
+
+        </Spinner>
     </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/event_mood_screen"
+            android:textAllCaps="false"
+            android:layout_weight="65"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"/>
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="15"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@android:color/darker_gray" />
+    </LinearLayout>
+    <EditText
+        android:id="@+id/notes_edit"
+        android:inputType="text|textMultiLine|textCapSentences"
+        android:maxLength="240"
+        android:gravity="start"
+        android:maxLines="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/medicine_and_event_linear"
+        android:hint="@string/notes"/>
+    <Button
+        android:layout_below="@id/notes_edit"
+        style="@android:style/ButtonBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textAllCaps="false"
+        android:background="@color/regbutton_color"
+        />
 </RelativeLayout>
+</ScrollView>
