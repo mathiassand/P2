@@ -1,5 +1,7 @@
 package com.p2prototype.b217.moodprototype;
 
+import java.util.ArrayList;
+
 /**
  * Created by Anders on 30/04/2017.
  */
@@ -16,6 +18,7 @@ public class VisualObject extends MoodLogging{
         this.weight = weight;
         this.note = note;
     }
+
     //Lav method nedenunder som laver visualisering. Kald method inde i visualiserings skærmen.
     public void VisualizeData(){
 
