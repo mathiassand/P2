@@ -83,4 +83,42 @@
     <string name="pref_ringtone_silent">Silent</string>
 
     <string name="pref_title_vibrate">Vibrate</string>
+
+    <string name="info_intro">Denne app er lavet til mennesker der har bipolar affektiv lidelse.
+        Formålet med brugen af denne app er, at opnå mere viden om sig selv så man i fremtiden er i
+        stand til at undgå seriøse udsving i sit humør. Dette gøres ved at registrere sit humør, og
+        derefter indtaste forskellig data så man kan se hvordan det hænger sammen med sit humør.</string>
+    <string name="info_slider">Ovenfor ses en slider, som går fra blå til gul, og derefter til rød.
+        Denne slider bruges til at indikere sit humør. Den blå farve repræsentere deppresivt humør.
+        Den røde farve repræsenterer manisk humør. Des mørkere den røde eller den blå farve er, des
+        mere manisk eller depressiv føler man sig. Den gule farve i midten indikerer at man har et
+        stabilt humør. Sæt blot slideren ved det humør man føler man har oplevet.</string>
+    <string name="info_anxslider">Ovenfor ses en slider der repræsenterer angst. Den fungerer på samme
+    måde som humør slideren. Den helt hvide farve indikerer, at man ikke har oplevet angst. Des mørkere
+    farve man sætter slideren på, des højere angst niveau har man oplevet.</string>
+    <string name="info_sleep">Ovenfor ses fire hjul. De to af dem under titlen Timer Sovet
+        bruges til at indtaste hvor meget søvn man har fået siden sidste gang man registrede data.
+        De to hjul under titlen Vægt kan bruges til at registrere sin vægt. Dette kan være vigtigt,
+        da ens humør kan påvirke sin appetit.</string>
+    <string name="info_medicine">I medicin tabben kan man tilføje en række medicin som man benytter sig af.
+    Man kan dermed vælge hvilket medicin man har benyttet sig af den dag, og hvor stor en mængde.
+    Medicinen kommer i historik skærmen til at blive repræsenteret af et ikon, som forestiller en pille.
+    Når man tilføjer ny medicin kan man lave farven om på dets ikon, så man i historikken kan identificerer
+    hvilket medicin man havde registreret.</string>
+    <string name="info_event">Ligesom med medicin, kan man tilføje det vi kalder begivenheder. Begivenheder
+    kan være lige hvad du som bruger har lyst til at registrere, som du mener kan have effekt på dit humør.
+    Det kunne f.eks. være en familiefest, en gåtur, eller en sygedag. I historik skærmen kan man dermed se
+    hvordan disse begivenheder påvirker sit humør.</string>
+    <string name="info_note">I note feltet kan man skrive hvad end man har lyst til, som man mener man
+    kan få gavn af at kigge tilbage på i fremtiden. Her kan man f.eks. beskrive sin dag i detaljer, så
+    man i fremtiden ved nøjagtig hvorfor man har registreret det data man gjorde.</string>
+    <string name="info_registrer">Når du har indtastet al den data du har lyst til, kan du trykke på
+    registrer knappen for at gemme det. Derefter vil man kunne se dataen i historik skærmen.</string>
+    <string name="info_visualisering">I historik skærmen kan man se en visualisering af al den data
+    man har indtastet og gemt, inddelt efter dato. Baggrundsfarverne symboliserer det humør der er
+    blevet registreret. Oven i farvernen kan man se ikonerne på det medicin og begivenheder der blev
+    registreret sammen med humører. Man kan se hvilken begivnhed og hvilket medicin der blev registreret
+    ved brug af farverne på ikonerne. Registreret søvn og vægt vises i bunden af skærmen. Angst bliver
+    vist med sorte og hvide farver lige under humør blokken.</string>
+
 </resources>
