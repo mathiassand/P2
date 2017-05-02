@@ -8,7 +8,8 @@
 
     <Switch
         android:id="@+id/notifikation"
-        android:checked="true"
+        android:checked="false"
+        android:onClick="onClick"
         android:layout_width="362dp"
         android:layout_height="25dp"
         android:text="@string/pref_notification"
