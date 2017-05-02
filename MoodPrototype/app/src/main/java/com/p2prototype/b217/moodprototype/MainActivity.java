@@ -60,4 +60,15 @@ public class MainActivity extends AppCompatActivity {
         NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         manager.notify(0, builder.build());
     }
+
+    //This will hopefully make an .csv-file
+
+
+
+
+
+
+
+
+
 }
