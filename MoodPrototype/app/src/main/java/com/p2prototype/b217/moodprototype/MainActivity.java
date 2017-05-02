@@ -1,27 +1,31 @@
 package com.p2prototype.b217.moodprototype;
-import android.support.v7.app.AppCompatActivity;
-import android.app.Activity;
+
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
-import android.support.v4.app.NotificationCompat;
 import android.os.Bundle;
+import android.support.v4.app.NotificationCompat;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.Button;
 
-import java.io.File;
+
+
 
 
 public class MainActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        addNotification();
+        }
 
-    }
+
+
+
+
+
+
 
     public void moodButtonPressed(View view)
     {
@@ -45,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(openHistorikScreen);
 
     }
-    private void addNotification() {
+    public void addNotification() {
         NotificationCompat.Builder builder =
                 new NotificationCompat.Builder(this)
                         .setSmallIcon(R.drawable.bell)
@@ -61,7 +65,20 @@ public class MainActivity extends AppCompatActivity {
         NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         manager.notify(0, builder.build());
     }
-    
+
+
+
+
+
+
+
+
+
+
+
+
+        //This will hopefully make an .csv-file
+
 
 
 
