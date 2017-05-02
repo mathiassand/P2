@@ -8,7 +8,13 @@ import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+<<<<<<< HEAD
 import android.widget.Switch;
+=======
+import android.widget.Button;
+
+import java.io.File;
+>>>>>>> master
 
 
 public class MainActivity extends AppCompatActivity {
@@ -78,6 +84,7 @@ public class MainActivity extends AppCompatActivity {
         NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
         manager.notify(0, builder.build());
     }
+<<<<<<< HEAD
 
 
 
@@ -90,6 +97,9 @@ public class MainActivity extends AppCompatActivity {
 
 
         //This will hopefully make an .csv-file
+=======
+    
+>>>>>>> master
 
 
 
