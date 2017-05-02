@@ -6,13 +6,22 @@ package com.p2prototype.b217.moodprototype;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.widget.Switch;
 
-public class NotificationView extends Activity{
+public class NotificationView extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.notification);
 
+        Switch simpleSwitch = (Switch) findViewById(R.id.notifikation);
+
+        simpleSwitch.setChecked(true);
+
+
+
 
     }
+
+
 }
