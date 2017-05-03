@@ -79,15 +79,16 @@ public class MainActivity extends AppCompatActivity {
         //time on notification
         AlarmManager alarmMngr;
         PendingIntent alarmIntent;
+        Context context = this;
 
-        alarmMngr = (AlarmManager)this.getSystemService(Context.ALARM_SERVICE);
-        Intent intent = new Intent(this, NotificationView.class);
-        alarmIntent = PendingIntent.getBroadcast(this, 0, intent, 0);
+        alarmMngr = (AlarmManager)context.getSystemService(Context.ALARM_SERVICE);
+        Intent intent = new Intent(context, SettingsActivity.class);
+        alarmIntent = PendingIntent.getBroadcast(context, 0, intent, 0);
 
         Calendar cal = Calendar.getInstance();
         cal.setTimeInMillis(System.currentTimeMillis());
-        cal.set(Calendar.HOUR_OF_DAY, 8);
-        cal.set(Calendar.MINUTE, 50);
+        cal.set(Calendar.HOUR_OF_DAY, 11);
+        cal.set(Calendar.MINUTE, 48);
         cal.set(Calendar.SECOND, 0);
 
         alarmMngr.setInexactRepeating(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), AlarmManager.INTERVAL_DAY, alarmIntent);

@@ -125,6 +125,31 @@
     ved brug af farverne på ikonerne. Registreret søvn og vægt vises i bunden af skærmen. Angst bliver
     vist med sorte og hvide farver lige under humør blokken.</string>
 
+    <string-array name="medicin_array">
+        <item> </item>
+        <item>Panodil</item>
+        <item>Hash</item>
+        <item>Opium</item>
 
+    </string-array>
+
+    <string-array name="amountOfMedicin_array">
+    <item> </item>
+    <item>1</item>
+    <item>2</item>
+    <item>3</item>
+    <item>4</item>
+    <item>5</item>
+    <item>6</item>
+    <item>7</item>
+    <item>8</item>
+    <item>9</item>
+    <item>10</item>
+</string-array>
+
+    <string-array name="events_array">
+        <item> </item>
+        <item>Fødselsdag</item>
+    </string-array>
 
 </resources>
