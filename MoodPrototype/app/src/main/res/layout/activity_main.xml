@@ -19,7 +19,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            app:srcCompat="@mipmap/mood_button"
+            app:srcCompat="@drawable/ic_ste"
             android:background="@color/white"
             android:onClick="moodButtonPressed"/>
     <TextView
@@ -50,7 +50,7 @@
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
             android:onClick="SettingsButtonPressed"
-            app:srcCompat="@mipmap/settings_button"
+            app:srcCompat="@drawable/ic_ind"
             android:background="@color/white"/>
             <TextView
                 android:id="@+id/settingsText"
@@ -85,7 +85,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            app:srcCompat="@mipmap/stat_button"
+            app:srcCompat="@drawable/ic_hisvector"
             android:background="@color/white"
             android:onClick="HistorikButtonPressed"/>
         <TextView
@@ -115,7 +115,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            app:srcCompat="@mipmap/info_button"
+            app:srcCompat="@drawable/ic_inf"
             android:background="@color/white"
             android:onClick="InfoButtonPressed"/>
             <TextView
