@@ -15,7 +15,11 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 import java.util.zip.Inflater;
 
@@ -51,6 +55,16 @@ ArrayList<RelativeLayout> visual= new ArrayList<>(0);
     }
     private void convertCSV(){
         for (int i=0;i<20;i++){
+            List<String> lines = new ArrayList<>();
+            try {
+                BufferedReader reader = new BufferedReader(new FileReader("myfile.csv"));
+                String line = null;
+                while ((line = reader.readLine()) != null) {
+                    lines.add(line);
+                }
+            } catch(Exception e){
+
+            }
             Random r=new Random();
             visualObjects.add(new VisualObject(r.nextInt(101),r.nextInt(101),r.nextInt(24),r.nextInt(60),r.nextInt(200),r.nextInt(10),"bullshit","03/05"));
         }
