@@ -1,28 +1,73 @@
 package com.p2prototype.b217.moodprototype;
 
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 
 /**
  * Created by Anders on 30/04/2017.
  */
 
-public class VisualObject extends MoodLogging{
-
-    public VisualObject(int mood, int anxiety, int sleepHours, int sleepMinutes, int weightK, int weightG,
-                        String note, ArrayList<Event> events, ArrayList<Medicine> meds, Date date/*+ medicin og begivenhed array, samt dato*/){
-        this.mood = mood;
-        this.anxiety = anxiety;
-        this.sleepHours = sleepHours;
-        this.sleepMinutes = sleepMinutes;
-        this.weightK = weightK;
-        this.weightG = weightG;
-        this.note = note;
+public class VisualObject extends HistorikActivity {
+    private int mood;
+    private int anxiety;
+    private int sleepHours;
+    private int sleepMinutes;
+    private int weightK;
+    private int weightG;
+    private String note;
+    private String date;
+    private ArrayList<Event> events = new ArrayList<>(0);
+    private ArrayList<Medicine> meds = new ArrayList<>(0);
+    public VisualObject(int mo, int anxi, int sleepH, int sleepM, int wK, int wG,
+                       /*String no, ArrayList<Event> even, ArrayList<Medicine> med, */String dat/*+ medicin og begivenhed array, samt dato*/) {
+        this.mood = mo;
+        this.anxiety = anxi;
+        this.sleepHours = sleepH;
+        this.sleepMinutes = sleepM;
+        this.weightK = wK;
+        this.weightG = wG;
+        /*this.note = no;
+        this.events = even;
+        this.meds = med;*/
+        this.date = dat;
     }
 
-    //Lav method nedenunder som laver visualisering. Kald method inde i visualiserings skærmen.
-    public void VisualizeData(){
+    public String getDate() {
+        return date;
+    }
 
+    public int getMood() {
+        return mood;
+    }
+
+    public int getAnxiety() {
+        return anxiety;
+    }
+
+    public String getSleep() {
+        return sleepHours+":"+sleepMinutes;
+    }
+
+    public String getWeight() {
+        return weightK+","+weightG+"kg";
+    }
+
+    public String getNote(){
+        return note;
+    }
+    public boolean getNoteBoolean() {
+        return note.trim().equals("");
+    }
+
+    public ArrayList<Event> getEvents() {
+        return events;
+    }
+    public boolean getEventsBoolean(){
+        return events.size()!=0;
+    }
+    public ArrayList<Medicine> getMeds() {
+        return meds;
+    }
+    public boolean getMedsBoolean(){
+        return meds.size()!=0;
     }
 }
