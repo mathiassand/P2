@@ -13,11 +13,14 @@ public class SettingsActivity extends MainActivity {
         setContentView(R.layout.activity_settings);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+
+
         notifiSwitch = (Switch) findViewById(R.id.notifikation);
         notifiSwitch.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
+                if(notifiSwitch.isChecked())
                 addNotification();
             }
         });
