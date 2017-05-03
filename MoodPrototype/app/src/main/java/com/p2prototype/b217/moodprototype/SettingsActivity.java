@@ -21,7 +21,9 @@ public class SettingsActivity extends MainActivity {
             @Override
             public void onClick(View v) {
                 if(notifiSwitch.isChecked())
+
                 addNotification();
+                addTimeNotification();
             }
         });
     }
