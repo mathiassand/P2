@@ -235,7 +235,7 @@
         android:layout_height="2dp"
         android:background="@android:color/darker_gray"
         android:layout_below="@id/sleep_weight_separator_1"/>
-    <LinearLayout
+    <!--<LinearLayout
         android:id="@+id/medicine_and_event_linear"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -297,14 +297,14 @@
             android:layout_width="match_parent"
             android:layout_height="2dp"
             android:background="@android:color/darker_gray" />
-    </LinearLayout>
+    </LinearLayout>-->
     <EditText
         android:id="@+id/notes_edit"
         android:inputType="text|textMultiLine|textCapSentences"
         android:gravity="start"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/medicine_and_event_linear"
+        android:layout_below="@id/sleep_weight_separator_1"
         android:hint="@string/notes"/>
     <Button
         android:layout_below="@id/notes_edit"

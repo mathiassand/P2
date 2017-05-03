@@ -35,7 +35,7 @@ ArrayList<RelativeLayout> visual= new ArrayList<>(0);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         container = (LinearLayout) findViewById(R.id.visual_container);
         inflateVisual=(LayoutInflater) HistorikActivity.this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        convertCSV();
+
         for (int i=0; i<visualObjects.size();i++){
             visual.add((RelativeLayout)inflateVisual.inflate(R.layout.visualisation,null,true));
         }

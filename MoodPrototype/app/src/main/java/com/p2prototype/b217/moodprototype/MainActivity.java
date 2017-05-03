@@ -6,10 +6,18 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Calendar;
 
 
@@ -18,18 +26,106 @@ import java.util.Calendar;
 
 
 public class MainActivity extends AppCompatActivity {
+
+
+
+    public static String path = Environment.getExternalStorageDirectory().getAbsolutePath() + "/dataFile.txt";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        File dir = new File(path);
+        dir.mkdirs();
         }
 
+    ///Save and Load for MainActivity.java:
+    public static void Save(File file, String[] data)
+    {
+        FileOutputStream fos = null;
+        try
+        {
+            fos = new FileOutputStream(file);
+        }
+        catch (FileNotFoundException e) {e.printStackTrace();}
+        try
+        {
+            try
+            {
+                if (!(file.equals(""))){
+                    for (int i = 0; i < data.length; i++) {
+                        fos.write(data[i].getBytes(),(int)file.length(),data.length);
+                        if (i < data.length - 1) {
+                            fos.write("\n".getBytes());
+                        }
+                    }
+                }
+                else {
+                    for (int i = 0; i < data.length; i++) {
+                        fos.write(data[i].getBytes());
+                        if (i < data.length - 1) {
+                            fos.write("\n".getBytes());
+                        }
+                    }
+                }
+            }
+            catch (IOException e) {e.printStackTrace();}
+        }
+        finally
+        {
+            try
+            {
+                fos.close();
+            }
+            catch (IOException e) {e.printStackTrace();}
+        }
+    }
 
 
+    public static String[] Load(File file)
+    {
+        FileInputStream fis = null;
+        try
+        {
+            fis = new FileInputStream(file);
+        }
+        catch (FileNotFoundException e) {e.printStackTrace();}
+        InputStreamReader isr = new InputStreamReader(fis);
+        BufferedReader br = new BufferedReader(isr);
 
+        String test;
+        int anzahl=0;
+        try
+        {
+            while ((test=br.readLine()) != null)
+            {
+                anzahl++;
+            }
+        }
+        catch (IOException e) {e.printStackTrace();}
 
+        try
+        {
+            fis.getChannel().position(0);
+        }
+        catch (IOException e) {e.printStackTrace();}
 
+        String[] array = new String[anzahl];
 
+        String line;
+        int i = 0;
+        try
+        {
+            while((line=br.readLine())!=null)
+            {
+                array[i] = line;
+                i++;
+            }
+        }
+        catch (IOException e) {e.printStackTrace();}
+        return array;
+    }
 
     public void moodButtonPressed(View view)
     {
@@ -95,27 +191,4 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-        //This will hopefully make an .csv-file
-
-
-
-
-
-
-
-
-
-
 }
