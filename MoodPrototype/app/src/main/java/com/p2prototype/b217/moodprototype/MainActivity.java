@@ -46,29 +46,21 @@ public class MainActivity extends AppCompatActivity {
         FileOutputStream fos = null;
         try
         {
-            fos = new FileOutputStream(file);
+            fos = new FileOutputStream(file,true);
         }
         catch (FileNotFoundException e) {e.printStackTrace();}
         try
         {
             try
             {
-                if (!(file.equals(""))){
                     for (int i = 0; i < data.length; i++) {
-                        fos.write(data[i].getBytes(),(int)file.length(),data.length);
-                        if (i < data.length - 1) {
-                            fos.write("\n".getBytes());
-                        }
-                    }
-                }
-                else {
-                    for (int i = 0; i < data.length; i++) {
+
                         fos.write(data[i].getBytes());
                         if (i < data.length - 1) {
                             fos.write("\n".getBytes());
                         }
                     }
-                }
+
             }
             catch (IOException e) {e.printStackTrace();}
         }
