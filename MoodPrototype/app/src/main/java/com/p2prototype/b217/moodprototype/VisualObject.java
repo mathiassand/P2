@@ -15,18 +15,18 @@ public class VisualObject extends HistorikActivity {
     private int weightG;
     private String note;
     private String date;
-    private ArrayList<Event> events = new ArrayList<>(0);
-    private ArrayList<Medicine> meds = new ArrayList<>(0);
+    /*private ArrayList<Event> events = new ArrayList<>(0);
+    private ArrayList<Medicine> meds = new ArrayList<>(0);*/
     public VisualObject(int mo, int anxi, int sleepH, int sleepM, int wK, int wG,
-                       /*String no, ArrayList<Event> even, ArrayList<Medicine> med, */String dat/*+ medicin og begivenhed array, samt dato*/) {
+                       String no, /*ArrayList<Event> even, ArrayList<Medicine> med, */String dat/*+ medicin og begivenhed array, samt dato*/) {
         this.mood = mo;
         this.anxiety = anxi;
         this.sleepHours = sleepH;
         this.sleepMinutes = sleepM;
         this.weightK = wK;
         this.weightG = wG;
-        /*this.note = no;
-        this.events = even;
+        this.note = no;
+        /*this.events = even;
         this.meds = med;*/
         this.date = dat;
     }
@@ -55,10 +55,10 @@ public class VisualObject extends HistorikActivity {
         return note;
     }
     public boolean getNoteBoolean() {
-        return note.trim().equals("");
+        return !note.trim().equals("");
     }
 
-    public ArrayList<Event> getEvents() {
+    /*public ArrayList<Event> getEvents() {
         return events;
     }
     public boolean getEventsBoolean(){
@@ -69,5 +69,5 @@ public class VisualObject extends HistorikActivity {
     }
     public boolean getMedsBoolean(){
         return meds.size()!=0;
-    }
+    }*/
 }

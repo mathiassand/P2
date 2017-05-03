@@ -75,7 +75,7 @@
     <ImageView
         android:id="@+id/icon_3"
         android:layout_width="60dp"
-        android:layout_height="40dp"
+        android:layout_height="60dp"
         android:layout_above="@id/weight_visual"
         android:scaleType="centerInside" />
 
