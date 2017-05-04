@@ -20,16 +20,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Calendar;
 
-
-
-
-
-
 public class MainActivity extends AppCompatActivity {
 
-
-
-    public static String path = Environment.getExternalStorageDirectory().getAbsolutePath() + "/datafolder";
+    public static String path = Environment.getExternalStorageDirectory().getAbsolutePath() + "/dataFile.txt";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

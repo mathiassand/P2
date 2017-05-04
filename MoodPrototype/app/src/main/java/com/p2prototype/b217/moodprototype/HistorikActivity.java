@@ -69,7 +69,7 @@ ArrayList<RelativeLayout> visual= new ArrayList<>(0);
         String notes;
         String todays;
 
-        File file = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/datafolder", "dataFile.txt");
+        File file = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/dataFile.txt", "dataFile.txt");
         String[] entrie = MainActivity.Load(file);
         int k = 0;
         while (k < entrie.length) {
