@@ -33,7 +33,8 @@
             android:name=".SettingsActivity"
             android:label="Indstillinger" />
         <activity android:name=".HistorikActivity"
-            android:label="Historik"/>
+            android:label="Historik"
+            android:screenOrientation="landscape"/>
 
 
 

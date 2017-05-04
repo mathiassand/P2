@@ -44,7 +44,7 @@ public class VisualObject extends HistorikActivity {
     }
 
     public String getSleep() {
-        return sleepHours+":"+sleepMinutes;
+        return sleepHours+":"+String.format("%02d", sleepMinutes);
     }
 
     public String getWeight() {
