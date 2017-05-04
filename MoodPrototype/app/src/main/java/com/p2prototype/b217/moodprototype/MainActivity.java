@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-    public static String path = Environment.getExternalStorageDirectory().getAbsolutePath() + "/dataFile.txt";
+    public static String path = Environment.getExternalStorageDirectory().getAbsolutePath() + "/datafolder";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

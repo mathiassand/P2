@@ -69,7 +69,7 @@ ArrayList<RelativeLayout> visual= new ArrayList<>(0);
         String notes;
         String todays;
 
-        File file = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/dataFile.txt", "dataFile.txt");
+        File file = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/datafolder", "dataFile.txt");
         String[] entrie = MainActivity.Load(file);
         int k = 0;
         while (k < entrie.length) {
@@ -84,7 +84,7 @@ ArrayList<RelativeLayout> visual= new ArrayList<>(0);
             k += 8;
             visualObjects.add(new VisualObject(moods, anxieties, sleepHour, sleepMinute, weightKs, weightGs, notes, todays));
         }} catch(Exception e){
-            Toast.makeText(this, "array", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Dine data er blevet hentet", Toast.LENGTH_SHORT).show();
             }
 
 
@@ -161,7 +161,7 @@ ArrayList<RelativeLayout> visual= new ArrayList<>(0);
                         }
                     });
                     container.addView(visual.get(i));
-                    if (i!=visual.size()-1&& !visualObjects.get(i).getDate().equals(visualObjects.get(i).getDate())){
+                    if (i!=visual.size()-1&& !visualObjects.get(i).getDate().equals(visualObjects.get(i+1).getDate())){
                         container.addView(line);
                     }
                 }
