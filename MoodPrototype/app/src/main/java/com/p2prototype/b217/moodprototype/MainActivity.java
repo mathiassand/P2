@@ -3,6 +3,7 @@ package com.p2prototype.b217.moodprototype;
 import android.app.AlarmManager;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
+import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -135,46 +136,33 @@ public class MainActivity extends AppCompatActivity {
         startActivity(openHistorikScreen);
 
     }
-    public void addNotification() {
-        NotificationCompat.Builder builder =
-                new NotificationCompat.Builder(this)
-                        .setSmallIcon(R.drawable.bell)
-                        //.setContentTitle("God stemning")
-                        .setContentText("Hej, har du glemt mig i dag?");
 
-        Intent notificationIntent = new Intent(this, MainActivity.class);
-        PendingIntent contentIntent = PendingIntent.getActivity(this, 0, notificationIntent,
-                PendingIntent.FLAG_UPDATE_CURRENT);
-        builder.setContentIntent(contentIntent);
+    public void addTimeNotification() {
 
-        // Add as notification
-        NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-        manager.notify(0, builder.build());
+        Intent intent = new Intent(getApplicationContext(), NotificationView.class);
+        PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 0, intent, PendingIntent.FLAG_CANCEL_CURRENT);
 
+        AlarmManager am = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+
+
+        Calendar cal = Calendar.getInstance();
+        cal.set(Calendar.HOUR_OF_DAY, 9);
+        cal.set(Calendar.MINUTE, 10);
+        am.setRepeating(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(), AlarmManager.INTERVAL_DAY, pendingIntent);
 
     }
 
+    public class addNotification extends BroadcastReceiver {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            NotificationCompat.Builder mBuilder =
+                    new NotificationCompat.Builder(context)
+                            .setSmallIcon(R.drawable.bell)
+                            .setContentTitle("My notification")
+                            .setContentText("Hello World!");
 
-
-    public void addTimeNotification(){
-
-        //time on notification
-        AlarmManager alarmMngr;
-        PendingIntent alarmIntent;
-        Context context = this;
-
-        alarmMngr = (AlarmManager)context.getSystemService(Context.ALARM_SERVICE);
-        Intent intent = new Intent(context, SettingsActivity.class);
-        alarmIntent = PendingIntent.getBroadcast(context, 0, intent, 0);
-
-        Calendar cal = Calendar.getInstance();
-        cal.setTimeInMillis(System.currentTimeMillis());
-        cal.set(Calendar.HOUR_OF_DAY, 11);
-        cal.set(Calendar.MINUTE, 48);
-        cal.set(Calendar.SECOND, 0);
-
-        alarmMngr.setInexactRepeating(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), AlarmManager.INTERVAL_DAY, alarmIntent);
-
-
+            NotificationManager mNotificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
+            mNotificationManager.notify(1, mBuilder.build());
+        }
     }
 }
