@@ -145,6 +145,7 @@ ArrayList<RelativeLayout> visual= new ArrayList<>(0);
                     }
                     int anx =Double.valueOf((100-visualObjects.get(i).getAnxiety())*2.55).intValue();
                     visual.get(i).findViewById(R.id.anxiety_visual).setBackgroundColor(Color.rgb(anx,anx,anx));
+                    if(!note.trim().equals("")){
                     visual.get(i).setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
@@ -159,7 +160,7 @@ ArrayList<RelativeLayout> visual= new ArrayList<>(0);
                                     .setIcon(R.drawable.ic_note)
                                     .show();
                         }
-                    });
+                    });}
                     container.addView(visual.get(i));
                     if (i!=visual.size()-1&& !visualObjects.get(i).getDate().equals(visualObjects.get(i+1).getDate())){
                         container.addView(line);
