@@ -23,7 +23,7 @@
 
         <TextView
             android:id="@+id/sleep_text"
-            android:layout_width="wrap_content"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
             android:textAlignment="center"
             android:gravity="center"
@@ -35,12 +35,12 @@
             android:text="Sleep"
             android:textColor="@color/white"/>
 
-        <ImageView
+        <!--<ImageView
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="8dp"
-            app:srcCompat="@drawable/ic_bed" />
+            app:srcCompat="@drawable/ic_bed" />-->
 
         <View
             android:layout_width="60dp"
