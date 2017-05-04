@@ -120,10 +120,10 @@
     registrer knappen for at gemme det. Derefter vil man kunne se dataen i historik skærmen.</string>
     <string name="info_visualisering">I historik skærmen kan man se en visualisering af al den data
     man har indtastet og gemt, inddelt efter dato. Baggrundsfarverne symboliserer det humør der er
-    blevet registreret. Oven i farvernen kan man se ikonerne på det medicin og begivenheder der blev
-    registreret sammen med humører. Man kan se hvilken begivnhed og hvilket medicin der blev registreret
-    ved brug af farverne på ikonerne. Registreret søvn og vægt vises i bunden af skærmen. Angst bliver
-    vist med sorte og hvide farver lige under humør blokken.</string>
+    blevet registreret. Hvis man i en registrering lavede en note, kommer der et note ikon frem.
+    Man kan trykke på hver registrering for at få en besked frem på skærmen, hvor man kan læse det
+    man skrev den registrerings note felt. Man kan også se det angst niveau der blev registreret, som
+    er repræsenteret med en grå tone. Nederst kan man se hvor mange timers søvn man registrerede.</string>
 
     <string-array name="medicin_array">
         <item> </item>
