@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
@@ -32,6 +33,7 @@ ArrayList<RelativeLayout> visual= new ArrayList<>(0);
     ArrayList<VisualObject> visualObjects=new ArrayList<>(0);
     LayoutInflater inflateVisual;
     LinearLayout container;
+    HorizontalScrollView scrollView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +47,14 @@ ArrayList<RelativeLayout> visual= new ArrayList<>(0);
             visual.add((RelativeLayout)inflateVisual.inflate(R.layout.visualisation,null,true));
         }
         drawVisual();
+        scrollView=(HorizontalScrollView) findViewById(R.id.scroll_visual);
+        scrollView.postDelayed(new Runnable() {
+
+            @Override
+            public void run() {
+                scrollView.fullScroll(HorizontalScrollView.FOCUS_RIGHT);
+            }
+        }, 10);
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
