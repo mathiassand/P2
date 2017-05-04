@@ -114,8 +114,9 @@
     Det kunne f.eks. være en familiefest, en gåtur, eller en sygedag. I historik skærmen kan man dermed se
     hvordan disse begivenheder påvirker sit humør.</string>
     <string name="info_note">I note feltet kan man skrive hvad end man har lyst til, som man mener man
-    kan få gavn af at kigge tilbage på i fremtiden. Her kan man f.eks. beskrive sin dag i detaljer, så
-    man i fremtiden ved nøjagtig hvorfor man har registreret det data man gjorde.</string>
+    kan få gavn af at kigge tilbage på i fremtiden. Her kan man f.eks. beskrive sin dag i detaljer, ved f.eks at notere hvilket
+        medicin man har taget eller om der var nogle specielle begivenheder der fandt sted.
+     I fremtiden kan man dermed læse detaljer om dagen, og se om de havde effekt på ens humør.</string>
     <string name="info_registrer">Når du har indtastet al den data du har lyst til, kan du trykke på
     registrer knappen for at gemme det. Derefter vil man kunne se dataen i historik skærmen.</string>
     <string name="info_visualisering">I historik skærmen kan man se en visualisering af al den data
