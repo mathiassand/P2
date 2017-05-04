@@ -3,6 +3,7 @@ package com.p2prototype.b217.moodprototype;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.graphics.Color;
+import android.os.Environment;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,8 +15,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;
@@ -35,7 +38,7 @@ ArrayList<RelativeLayout> visual= new ArrayList<>(0);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         container = (LinearLayout) findViewById(R.id.visual_container);
         inflateVisual=(LayoutInflater) HistorikActivity.this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-
+        convertCSV();
         for (int i=0; i<visualObjects.size();i++){
             visual.add((RelativeLayout)inflateVisual.inflate(R.layout.visualisation,null,true));
         }
@@ -54,19 +57,45 @@ ArrayList<RelativeLayout> visual= new ArrayList<>(0);
         return true;
     }
     private void convertCSV(){
+        try{
+        int moods;
+        int anxieties;
+        int sleepHour;
+        int sleepMinute;
+        int weightKs;
+        int weightGs;
+        String notes;
+        String todays;
+
+        File file = new File(Environment.getExternalStorageDirectory().getAbsolutePath() + "/dataFile.txt", "dataFile.txt");
+        String[] entrie = MainActivity.Load(file);
+        int k = 0;
+        while (k < entrie.length) {
+            moods = Integer.parseInt(entrie[0 + k]);
+            anxieties = Integer.parseInt(entrie[1 + k]);
+            sleepHour = Integer.parseInt(entrie[2 + k]);
+            sleepMinute = Integer.parseInt(entrie[3 + k]);
+            weightKs = Integer.parseInt(entrie[4 + k]);
+            weightGs = Integer.parseInt(entrie[5 + k]);
+            notes = entrie[6 + k];
+            todays = entrie[7 + k];
+            k += 8;
+            visualObjects.add(new VisualObject(moods, anxieties, sleepHour, sleepMinute, weightKs, weightGs, notes, todays));
+        }} catch(Exception e){
+            Toast.makeText(this, "array", Toast.LENGTH_SHORT).show();
+            }
+
+
+
         for (int i=0;i<20;i++){
             List<String> lines = new ArrayList<>();
             try {
-                BufferedReader reader = new BufferedReader(new FileReader("myfile.csv"));
-                String line = null;
-                while ((line = reader.readLine()) != null) {
-                    lines.add(line);
-                }
+
             } catch(Exception e){
 
             }
             Random r=new Random();
-            visualObjects.add(new VisualObject(r.nextInt(101),r.nextInt(101),r.nextInt(24),r.nextInt(60),r.nextInt(200),r.nextInt(10),"bullshit","03/05"));
+            //visualObjects.add(new VisualObject(moods,r.nextInt(101),r.nextInt(24),r.nextInt(60),r.nextInt(200),r.nextInt(10),"bullshit","03/05"));
         }
     }
     private void drawVisual(){
