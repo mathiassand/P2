@@ -60,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
                             fos.write("\n".getBytes());
                         }
                     }
+                    fos.write("\n".getBytes());
 
             }
             catch (IOException e) {e.printStackTrace();}
