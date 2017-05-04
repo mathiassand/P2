@@ -46,6 +46,12 @@
                 android:value=".MainActivity"/>
         </activity>
 
+        <receiver
+            android:name=".MainActivity$addNotification"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+
 
 
 
