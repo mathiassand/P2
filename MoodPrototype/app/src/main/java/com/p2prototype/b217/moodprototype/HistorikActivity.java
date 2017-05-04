@@ -28,6 +28,7 @@ import java.util.zip.Inflater;
 
 public class HistorikActivity extends MoodLogging {
 ArrayList<RelativeLayout> visual= new ArrayList<>(0);
+    LinearLayout line;
     ArrayList<VisualObject> visualObjects=new ArrayList<>(0);
     LayoutInflater inflateVisual;
     LinearLayout container;
@@ -38,6 +39,7 @@ ArrayList<RelativeLayout> visual= new ArrayList<>(0);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         container = (LinearLayout) findViewById(R.id.visual_container);
         inflateVisual=(LayoutInflater) HistorikActivity.this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        line= (LinearLayout)inflateVisual.inflate(R.layout.line,null,true);
         convertCSV();
         for (int i=0; i<visualObjects.size();i++){
             visual.add((RelativeLayout)inflateVisual.inflate(R.layout.visualisation,null,true));
@@ -101,6 +103,15 @@ ArrayList<RelativeLayout> visual= new ArrayList<>(0);
     private void drawVisual(){
                 for (int i=0;i<visual.size();i++){
                     final int index=i;
+                    TextView date= (TextView)visual.get(i).findViewById(R.id.date_text);
+                    date.setText(visualObjects.get(i).getDate());
+                    TextView sleep=(TextView)visual.get(i).findViewById(R.id.sleep_text);
+                    sleep.setText(visualObjects.get(i).getSleep());
+                    TextView weight=(TextView)visual.get(i).findViewById(R.id.weight_visual);
+                    weight.setText(visualObjects.get(i).getWeight());
+                    date.setTextColor(Color.BLACK);
+                    sleep.setTextColor(Color.BLACK);
+                    weight.setTextColor(Color.BLACK);
                     int mood =visualObjects.get(i).getMood();
                     if(mood>=95){
                         visual.get(i).findViewById(R.id.visual_background).setBackgroundColor(Color.rgb(255,0,0));
@@ -124,19 +135,16 @@ ArrayList<RelativeLayout> visual= new ArrayList<>(0);
                         visual.get(i).findViewById(R.id.visual_background).setBackgroundColor(Color.rgb(1,83,255));
                     }else if(mood<=5){
                         visual.get(i).findViewById(R.id.visual_background).setBackgroundColor(Color.rgb(0,0,255));
+                        date.setTextColor(Color.WHITE);
+                        sleep.setTextColor(Color.WHITE);
+                        weight.setTextColor(Color.WHITE);
                     }
                     if (visualObjects.get(i).getNoteBoolean()){
                         ImageView  view =(ImageView)visual.get(i).findViewById(R.id.icon_3);
                         view.setImageResource(R.drawable.ic_note);
                     }
-                    int anx =Double.valueOf(visualObjects.get(i).getAnxiety()*2.55).intValue();
+                    int anx =Double.valueOf((100-visualObjects.get(i).getAnxiety())*2.55).intValue();
                     visual.get(i).findViewById(R.id.anxiety_visual).setBackgroundColor(Color.rgb(anx,anx,anx));
-                    TextView date= (TextView)visual.get(i).findViewById(R.id.date_text);
-                    date.setText(visualObjects.get(i).getDate());
-                    TextView sleep=(TextView)visual.get(i).findViewById(R.id.sleep_text);
-                    sleep.setText(visualObjects.get(i).getSleep());
-                    TextView weight=(TextView)visual.get(i).findViewById(R.id.weight_visual);
-                    weight.setText(visualObjects.get(i).getWeight());
                     visual.get(i).setOnClickListener(new View.OnClickListener() {
                         @Override
                         public void onClick(View view) {
@@ -153,6 +161,9 @@ ArrayList<RelativeLayout> visual= new ArrayList<>(0);
                         }
                     });
                     container.addView(visual.get(i));
+                    if (i!=visual.size()-1&& !visualObjects.get(i).getDate().equals(visualObjects.get(i).getDate())){
+                        container.addView(line);
+                    }
                 }
 
     }
