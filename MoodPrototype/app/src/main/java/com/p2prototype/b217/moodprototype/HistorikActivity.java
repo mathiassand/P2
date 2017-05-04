@@ -142,25 +142,24 @@ ArrayList<RelativeLayout> visual= new ArrayList<>(0);
                     if (visualObjects.get(i).getNoteBoolean()){
                         ImageView  view =(ImageView)visual.get(i).findViewById(R.id.icon_3);
                         view.setImageResource(R.drawable.ic_note);
+                        visual.get(i).setOnClickListener(new View.OnClickListener() {
+                            @Override
+                            public void onClick(View view) {
+                                new AlertDialog.Builder(HistorikActivity.this)
+                                        .setTitle("Noter for dagen")
+                                        .setMessage(visualObjects.get(index).getNote())
+                                        .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                                            public void onClick(DialogInterface dialog, int which) {
+                                                // continue with delete
+                                            }
+                                        })
+                                        .setIcon(R.drawable.ic_note)
+                                        .show();
+                            }
+                        });
                     }
                     int anx =Double.valueOf((100-visualObjects.get(i).getAnxiety())*2.55).intValue();
                     visual.get(i).findViewById(R.id.anxiety_visual).setBackgroundColor(Color.rgb(anx,anx,anx));
-                    if(!note.trim().equals("")){
-                    visual.get(i).setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            new AlertDialog.Builder(HistorikActivity.this)
-                                    .setTitle("Noter for dagen")
-                                    .setMessage(visualObjects.get(index).getNote())
-                                    .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-                                        public void onClick(DialogInterface dialog, int which) {
-                                            // continue with delete
-                                        }
-                                    })
-                                    .setIcon(R.drawable.ic_note)
-                                    .show();
-                        }
-                    });}
                     container.addView(visual.get(i));
                     if (i!=visual.size()-1&& !visualObjects.get(i).getDate().equals(visualObjects.get(i+1).getDate())){
                         container.addView(line);
