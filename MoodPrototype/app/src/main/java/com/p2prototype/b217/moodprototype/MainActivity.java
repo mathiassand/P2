@@ -28,7 +28,7 @@ import static java.util.Calendar.MINUTE;
 public class MainActivity extends AppCompatActivity {
 
     public static String path = Environment.getExternalStorageDirectory().getAbsolutePath() + "/dataFile.txt";
-
+SharedPreferences sharedPref;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
 
         File dir = new File(path);
         dir.mkdirs();
+
+
         }
 
     ///Save and Load for MainActivity.java:

@@ -47,14 +47,8 @@
         </activity>
 
         <receiver
-            android:name=".AddNotification"
-            android:enabled="true"
-            android:exported="false" >
-        </receiver>
-        <service android:name=".IntentServiceNotification"
-            android:exported="false">
-
-        </service>
+            android:name=".AddNotification" />
+        <service android:name=".IntentServiceNotification" />
 
 
 

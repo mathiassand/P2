@@ -5,6 +5,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.support.v4.app.NotificationCompat;
+import android.widget.Toast;
 
 /**
  * Created by peter on 05-05-2017.
@@ -13,6 +14,7 @@ import android.support.v4.app.NotificationCompat;
 public class AddNotification extends BroadcastReceiver{
     @Override
     public void onReceive(Context context, Intent intent) {
+        Toast.makeText(context,"Received!",Toast.LENGTH_SHORT).show();
         Intent intent1 = new Intent(context, IntentServiceNotification.class);
         context.startService(intent1);
         /*NotificationCompat.Builder mBuilder =

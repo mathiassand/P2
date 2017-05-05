@@ -23,6 +23,8 @@ public class IntentServiceNotification extends IntentService {
         builder.setContentTitle("God Stemning");
         builder.setContentText("Har du glemt mig i dag?");
         builder.setSmallIcon(R.drawable.bell);
+        builder.setAutoCancel(true);
+        builder.setLights(0xffFFff00, 500, 1500);
         Intent notifyIntent = new Intent(this,MainActivity.class);
         PendingIntent pendingIntent=PendingIntent.getActivity(this,2,notifyIntent,PendingIntent.FLAG_UPDATE_CURRENT);
         builder.setContentIntent(pendingIntent);
