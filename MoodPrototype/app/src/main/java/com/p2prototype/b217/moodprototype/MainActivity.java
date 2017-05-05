@@ -137,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void addTimeNotification() {
+    /*public void addTimeNotification() {
 
         Intent intent = new Intent(getApplicationContext(), NotificationView.class);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 0, intent, PendingIntent.FLAG_CANCEL_CURRENT);
@@ -152,7 +152,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public class addNotification extends BroadcastReceiver {
+    public static class addNotification extends BroadcastReceiver {
         @Override
         public void onReceive(Context context, Intent intent) {
             NotificationCompat.Builder mBuilder =
@@ -164,5 +164,5 @@ public class MainActivity extends AppCompatActivity {
             NotificationManager mNotificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
             mNotificationManager.notify(1, mBuilder.build());
         }
-    }
+    }*/
 }

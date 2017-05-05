@@ -22,17 +22,17 @@ public class SettingsActivity extends MainActivity {
 
 
 
-        notifiSwitch = (Switch) findViewById(R.id.notifikation);
+        /*notifiSwitch = (Switch) findViewById(R.id.notifikation);
         notifiSwitch.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
                 if(notifiSwitch.isChecked())
-                    addTimeNotification();
+                    //addTimeNotification();
                // addNotification();
 
             }
-        });
+        });*/
     }
 
 
