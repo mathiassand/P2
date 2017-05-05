@@ -114,16 +114,17 @@
     Det kunne f.eks. være en familiefest, en gåtur, eller en sygedag. I historik skærmen kan man dermed se
     hvordan disse begivenheder påvirker sit humør.</string>
     <string name="info_note">I note feltet kan man skrive hvad end man har lyst til, som man mener man
-    kan få gavn af at kigge tilbage på i fremtiden. Her kan man f.eks. beskrive sin dag i detaljer, så
-    man i fremtiden ved nøjagtig hvorfor man har registreret det data man gjorde.</string>
+    kan få gavn af at kigge tilbage på i fremtiden. Her kan man f.eks. beskrive sin dag i detaljer, ved f.eks at notere hvilket
+        medicin man har taget eller om der var nogle specielle begivenheder der fandt sted.
+     I fremtiden kan man dermed læse detaljer om dagen, og se om de havde effekt på ens humør.</string>
     <string name="info_registrer">Når du har indtastet al den data du har lyst til, kan du trykke på
     registrer knappen for at gemme det. Derefter vil man kunne se dataen i historik skærmen.</string>
     <string name="info_visualisering">I historik skærmen kan man se en visualisering af al den data
     man har indtastet og gemt, inddelt efter dato. Baggrundsfarverne symboliserer det humør der er
-    blevet registreret. Oven i farvernen kan man se ikonerne på det medicin og begivenheder der blev
-    registreret sammen med humører. Man kan se hvilken begivnhed og hvilket medicin der blev registreret
-    ved brug af farverne på ikonerne. Registreret søvn og vægt vises i bunden af skærmen. Angst bliver
-    vist med sorte og hvide farver lige under humør blokken.</string>
+    blevet registreret. Hvis man i en registrering lavede en note, kommer der et note ikon frem.
+    Man kan trykke på hver registrering for at få en besked frem på skærmen, hvor man kan læse det
+    man skrev den registrerings note felt. Man kan også se det angst niveau der blev registreret, som
+    er repræsenteret med en grå tone. Nederst kan man se hvor mange timers søvn man registrerede.</string>
 
     <string-array name="medicin_array">
         <item> </item>
