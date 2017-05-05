@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        <CheckBoxPreference
+            android:key="pref_noti"
+            android:title="@string/pref_notification"
+            android:summary="@string/pref_notification_summ"
+            android:defaultValue="true" />
+    <com.p2prototype.b217.moodprototype.TimePreference
+        android:key="time_noti_key"
+        android:summary="Sæt tidspunkt på dagen for notifikationer"
+        android:title="Tidspunkt for notifikationer" />
+</PreferenceScreen>

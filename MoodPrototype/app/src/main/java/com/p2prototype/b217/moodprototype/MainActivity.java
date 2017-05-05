@@ -6,6 +6,7 @@ import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.v4.app.NotificationCompat;
@@ -21,6 +22,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Calendar;
 
+import static com.p2prototype.b217.moodprototype.R.id.time;
 import static java.util.Calendar.MINUTE;
 
 public class MainActivity extends AppCompatActivity {
@@ -34,16 +36,6 @@ public class MainActivity extends AppCompatActivity {
 
         File dir = new File(path);
         dir.mkdirs();
-        Calendar calendar = Calendar.getInstance();
-        calendar.set(Calendar.HOUR_OF_DAY, 10);
-        calendar.set(MINUTE, calendar.get(MINUTE)+1);
-        calendar.set(Calendar.SECOND, 0);
-        Intent notifyIntent = new Intent(this,AddNotification.class);
-        PendingIntent pendingIntent = PendingIntent.getBroadcast
-                (this, 0, notifyIntent, PendingIntent.FLAG_UPDATE_CURRENT);
-        AlarmManager alarmManager = (AlarmManager) this.getSystemService(Context.ALARM_SERVICE);
-        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,  calendar.getTimeInMillis(),
-                AlarmManager.INTERVAL_DAY, pendingIntent);
         }
 
     ///Save and Load for MainActivity.java:
@@ -177,4 +169,9 @@ public class MainActivity extends AppCompatActivity {
             mNotificationManager.notify(1, mBuilder.build());
         }
     }*/
+    @Override
+    public void onStop(){
+
+        super.onStop();
+    }
 }

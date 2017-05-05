@@ -22,7 +22,7 @@ public class IntentServiceNotification extends IntentService {
         Notification.Builder builder = new Notification.Builder(this);
         builder.setContentTitle("God Stemning");
         builder.setContentText("Har du glemt mig i dag?");
-        builder.setSmallIcon(R.drawable.ic_bell);
+        builder.setSmallIcon(R.drawable.bell);
         Intent notifyIntent = new Intent(this,MainActivity.class);
         PendingIntent pendingIntent=PendingIntent.getActivity(this,2,notifyIntent,PendingIntent.FLAG_UPDATE_CURRENT);
         builder.setContentIntent(pendingIntent);

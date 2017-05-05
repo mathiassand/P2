@@ -11,6 +11,9 @@
     <string name="register">Registrer</string>
     <string name="anxiety">Angst</string>
     <string name="notes">Skriv noter&#8230;</string>
+    <string name="pref_notification_summ">Slå notifikationer til eller fra</string>
+    <string name="set_time_noti">Sæt tidspunkt for notifikationer</string>
+    <string name="PREFERENCE_FILE_KEY">PrefereceFileKey</string>
 
     <!-- Strings related to Settings -->
 
