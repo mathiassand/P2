@@ -46,6 +46,7 @@ public class SettingsActivity extends PreferenceActivity {
                 .replace(android.R.id.content, new PrefsFragment())
                 .commit();*/
         CheckBoxPreference checkBoxPreference =(CheckBoxPreference)findPreference("pref_noti");
+        checkBoxPreference.setChecked(sharedPref.getBoolean("noti_on",false));
         timePreference =(TimePreference)findPreference("time_noti_key");
         checkBoxPreference.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
             @Override
