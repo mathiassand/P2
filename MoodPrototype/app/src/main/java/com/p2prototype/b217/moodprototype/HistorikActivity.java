@@ -29,7 +29,7 @@ import java.util.zip.Inflater;
 
 public class HistorikActivity extends MoodLogging {
 ArrayList<RelativeLayout> visual= new ArrayList<>(0);
-    LinearLayout line;
+    ArrayList<LinearLayout> lines=new ArrayList<>(0);
     ArrayList<VisualObject> visualObjects=new ArrayList<>(0);
     LayoutInflater inflateVisual;
     LinearLayout container;
@@ -41,7 +41,6 @@ ArrayList<RelativeLayout> visual= new ArrayList<>(0);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         container = (LinearLayout) findViewById(R.id.visual_container);
         inflateVisual=(LayoutInflater) HistorikActivity.this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        line= (LinearLayout)inflateVisual.inflate(R.layout.line,null,true);
         convertCSV();
         for (int i=0; i<visualObjects.size();i++){
             visual.add((RelativeLayout)inflateVisual.inflate(R.layout.visualisation,null,true));
@@ -111,6 +110,7 @@ ArrayList<RelativeLayout> visual= new ArrayList<>(0);
         }
     }
     private void drawVisual(){
+        int j=0;
                 for (int i=0;i<visual.size();i++){
                     final int index=i;
                     TextView date= (TextView)visual.get(i).findViewById(R.id.date_text);
@@ -173,7 +173,9 @@ ArrayList<RelativeLayout> visual= new ArrayList<>(0);
                     });}
                     container.addView(visual.get(i));
                     if (i!=visual.size()-1&& !visualObjects.get(i).getDate().equals(visualObjects.get(i+1).getDate())){
-                        container.addView(line);
+                        lines.add((LinearLayout)inflateVisual.inflate(R.layout.line,null,true));
+                        container.addView(lines.get(j));
+                        j++;
                     }
                 }
 
