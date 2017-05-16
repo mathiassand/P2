@@ -28,17 +28,14 @@ import static java.util.Calendar.MINUTE;
 public class MainActivity extends AppCompatActivity {
 
     public static String path = Environment.getExternalStorageDirectory().getAbsolutePath() + "/dataFile.txt";
-SharedPreferences sharedPref;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         File dir = new File(path);
         dir.mkdirs();
-
-
-        }
+    }
 
     ///Save and Load for MainActivity.java:
     public static void Save(File file, String[] data)
@@ -61,7 +58,6 @@ SharedPreferences sharedPref;
                         }
                     }
                     fos.write("\n".getBytes());
-
             }
             catch (IOException e) {e.printStackTrace();}
         }
@@ -88,12 +84,12 @@ SharedPreferences sharedPref;
         BufferedReader br = new BufferedReader(isr);
 
         String test;
-        int anzahl=0;
+        int antal=0;
         try
         {
             while ((test=br.readLine()) != null)
             {
-                anzahl++;
+                antal++;
             }
         }
         catch (IOException e) {e.printStackTrace();}
@@ -104,7 +100,7 @@ SharedPreferences sharedPref;
         }
         catch (IOException e) {e.printStackTrace();}
 
-        String[] array = new String[anzahl];
+        String[] array = new String[antal];
 
         String line;
         int i = 0;
@@ -126,54 +122,16 @@ SharedPreferences sharedPref;
         startActivity(openMoodScreen);
     }
     public void InfoButtonPressed(View view){
-
-
         Intent openInfoScreen = new Intent(this,InfoActivity.class);
         startActivity(openInfoScreen);
     }
 
     public void SettingsButtonPressed(View view) {
-
         Intent openSettingScreen = new Intent(this,SettingsActivity.class);
         startActivity(openSettingScreen);
     }
     public void HistorikButtonPressed (View view){
         Intent openHistorikScreen = new Intent(this, HistorikActivity.class);
         startActivity(openHistorikScreen);
-
-    }
-
-    /*public void addTimeNotification() {
-
-        Intent intent = new Intent(getApplicationContext(), NotificationView.class);
-        PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 0, intent, PendingIntent.FLAG_CANCEL_CURRENT);
-
-        AlarmManager am = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
-
-
-        Calendar cal = Calendar.getInstance();
-        cal.set(Calendar.HOUR_OF_DAY, 9);
-        cal.set(Calendar.MINUTE, 10);
-        am.setRepeating(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(), AlarmManager.INTERVAL_DAY, pendingIntent);
-
-    }
-
-    public static class addNotification extends BroadcastReceiver {
-        @Override
-        public void onReceive(Context context, Intent intent) {
-            NotificationCompat.Builder mBuilder =
-                    new NotificationCompat.Builder(context)
-                            .setSmallIcon(R.drawable.bell)
-                            .setContentTitle("My notification")
-                            .setContentText("Hello World!");
-
-            NotificationManager mNotificationManager = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
-            mNotificationManager.notify(1, mBuilder.build());
-        }
-    }*/
-    @Override
-    public void onStop(){
-
-        super.onStop();
     }
 }

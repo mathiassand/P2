@@ -36,7 +36,7 @@ public class SettingsActivity extends PreferenceActivity {
     SharedPreferences.Editor editor;
     TimePreference timePreference;
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.preferences);
         sharedPref = this.getSharedPreferences(
@@ -86,7 +86,7 @@ public class SettingsActivity extends PreferenceActivity {
     }
 
 @Override
-    public void onStop(){
+    protected void onStop(){
     super.onStop();
     long hour=timePreference.getHour();
     long minutes=timePreference.getMinutes();

@@ -27,7 +27,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.zip.Inflater;
 
-public class HistorikActivity extends MoodLogging {
+public class HistorikActivity extends AppCompatActivity {
 ArrayList<RelativeLayout> visual= new ArrayList<>(0);
     ArrayList<LinearLayout> lines=new ArrayList<>(0);
     ArrayList<VisualObject> visualObjects=new ArrayList<>(0);
@@ -41,7 +41,7 @@ ArrayList<RelativeLayout> visual= new ArrayList<>(0);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         container = (LinearLayout) findViewById(R.id.visual_container);
         inflateVisual=(LayoutInflater) HistorikActivity.this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        convertCSV();
+        convertTXT();
         for (int i=0; i<visualObjects.size();i++){
             visual.add((RelativeLayout)inflateVisual.inflate(R.layout.visualisation,null,true));
         }
@@ -67,7 +67,7 @@ ArrayList<RelativeLayout> visual= new ArrayList<>(0);
     public boolean onCreateOptionsMenu(Menu menu) {
         return true;
     }
-    private void convertCSV(){
+    private void convertTXT(){
         try{
         int moods;
         int anxieties;
@@ -112,16 +112,7 @@ ArrayList<RelativeLayout> visual= new ArrayList<>(0);
     private void drawVisual(){
         int j=0;
                 for (int i=0;i<visual.size();i++){
-                    final int index=i;
-                    TextView date= (TextView)visual.get(i).findViewById(R.id.date_text);
-                    date.setText(visualObjects.get(i).getDate());
-                    TextView sleep=(TextView)visual.get(i).findViewById(R.id.sleep_text);
-                    sleep.setText(visualObjects.get(i).getSleep());
-                    TextView weight=(TextView)visual.get(i).findViewById(R.id.weight_visual);
-                    weight.setText(visualObjects.get(i).getWeight());
-                    date.setTextColor(Color.BLACK);
-                    sleep.setTextColor(Color.BLACK);
-                    weight.setTextColor(Color.BLACK);
+                    setText(i);
                     int mood =visualObjects.get(i).getMood();
                     if(mood>=95){
                         visual.get(i).findViewById(R.id.visual_background).setBackgroundColor(Color.rgb(255,0,0));
@@ -145,32 +136,14 @@ ArrayList<RelativeLayout> visual= new ArrayList<>(0);
                         visual.get(i).findViewById(R.id.visual_background).setBackgroundColor(Color.rgb(1,83,255));
                     }else if(mood<=5){
                         visual.get(i).findViewById(R.id.visual_background).setBackgroundColor(Color.rgb(0,0,255));
-                        date.setTextColor(Color.WHITE);
-                        sleep.setTextColor(Color.WHITE);
-                        weight.setTextColor(Color.WHITE);
                     }
                     if (visualObjects.get(i).getNoteBoolean()){
                         ImageView  view =(ImageView)visual.get(i).findViewById(R.id.icon_3);
                         view.setImageResource(R.drawable.ic_note);
                     }
+                    setNotesOnClick(i);
                     int anx =Double.valueOf((100-visualObjects.get(i).getAnxiety())*2.55).intValue();
                     visual.get(i).findViewById(R.id.anxiety_visual).setBackgroundColor(Color.rgb(anx,anx,anx));
-                    if(visualObjects.get(i).getNoteBoolean()){
-                    visual.get(i).setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            new AlertDialog.Builder(HistorikActivity.this)
-                                    .setTitle("Noter for dagen")
-                                    .setMessage(visualObjects.get(index).getNote())
-                                    .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
-                                        public void onClick(DialogInterface dialog, int which) {
-                                            // continue with delete
-                                        }
-                                    })
-                                    .setIcon(R.drawable.ic_note)
-                                    .show();
-                        }
-                    });}
                     container.addView(visual.get(i));
                     if (i!=visual.size()-1&& !visualObjects.get(i).getDate().equals(visualObjects.get(i+1).getDate())){
                         lines.add((LinearLayout)inflateVisual.inflate(R.layout.line,null,true));
@@ -179,5 +152,40 @@ ArrayList<RelativeLayout> visual= new ArrayList<>(0);
                     }
                 }
 
+    }
+    private void setText(int index){
+        TextView date= (TextView)visual.get(index).findViewById(R.id.date_text);
+        date.setText(visualObjects.get(index).getDate());
+        TextView sleep=(TextView)visual.get(index).findViewById(R.id.sleep_text);
+        sleep.setText(visualObjects.get(index).getSleep());
+        TextView weight=(TextView)visual.get(index).findViewById(R.id.weight_visual);
+        weight.setText(visualObjects.get(index).getWeight());
+        if (visualObjects.get(index).getMood()<=5){
+            date.setTextColor(Color.WHITE);
+            sleep.setTextColor(Color.WHITE);
+            weight.setTextColor(Color.WHITE);
+        } else{
+            date.setTextColor(Color.BLACK);
+            sleep.setTextColor(Color.BLACK);
+            weight.setTextColor(Color.BLACK);
+        }
+    }
+    private void setNotesOnClick(final int index){
+        if(visualObjects.get(index).getNoteBoolean()){
+            visual.get(index).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    new AlertDialog.Builder(HistorikActivity.this)
+                            .setTitle("Noter for dagen")
+                            .setMessage(visualObjects.get(index).getNote())
+                            .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+
+                                }
+                            })
+                            .setIcon(R.drawable.ic_note)
+                            .show();
+                }
+            });}
     }
 }

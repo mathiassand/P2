@@ -2,15 +2,9 @@ package com.p2prototype.b217.moodprototype;
 
 import android.app.IntentService;
 import android.app.Notification;
-import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Intent;
-import android.content.IntentSender;
 import android.support.v4.app.NotificationManagerCompat;
-
-/**
- * Created by peter on 05-05-2017.
- */
 
 public class IntentServiceNotification extends IntentService {
     private static final int NOTIFICATION_ID=3;
