@@ -111,46 +111,24 @@ ArrayList<RelativeLayout> visual= new ArrayList<>(0);
     }
     private void drawVisual(){
         int j=0;
-                for (int i=0;i<visual.size();i++){
-                    setText(i);
-                    int mood =visualObjects.get(i).getMood();
-                    if(mood>=95){
-                        visual.get(i).findViewById(R.id.visual_background).setBackgroundColor(Color.rgb(255,0,0));
-                    }else if(mood<95&&mood>=85){
-                        visual.get(i).findViewById(R.id.visual_background).setBackgroundColor(Color.rgb(255,46,1));
-                    }else if(mood<85&&mood>=75){
-                        visual.get(i).findViewById(R.id.visual_background).setBackgroundColor(Color.rgb(255,97,1));
-                    }else if(mood<75&&mood>=65){
-                        visual.get(i).findViewById(R.id.visual_background).setBackgroundColor(Color.rgb(255,146,1));
-                    }else if(mood<65&&mood>=55){
-                        visual.get(i).findViewById(R.id.visual_background).setBackgroundColor(Color.rgb(255,186,1));
-                    }else if(mood<55&&mood>=45){
-                        visual.get(i).findViewById(R.id.visual_background).setBackgroundColor(Color.rgb(255,255,0));
-                    }else if(mood<45&&mood>=35){
-                        visual.get(i).findViewById(R.id.visual_background).setBackgroundColor(Color.rgb(1,210,255));
-                    }else if(mood<35&&mood>=25){
-                        visual.get(i).findViewById(R.id.visual_background).setBackgroundColor(Color.rgb(1,165,255));
-                    }else if(mood<25&&mood>=15){
-                        visual.get(i).findViewById(R.id.visual_background).setBackgroundColor(Color.rgb(1,123,255));
-                    }else if(mood<15&&mood>5){
-                        visual.get(i).findViewById(R.id.visual_background).setBackgroundColor(Color.rgb(1,83,255));
-                    }else if(mood<=5){
-                        visual.get(i).findViewById(R.id.visual_background).setBackgroundColor(Color.rgb(0,0,255));
-                    }
-                    if (visualObjects.get(i).getNoteBoolean()){
-                        ImageView  view =(ImageView)visual.get(i).findViewById(R.id.icon_3);
-                        view.setImageResource(R.drawable.ic_note);
-                    }
-                    setNotesOnClick(i);
-                    int anx =Double.valueOf((100-visualObjects.get(i).getAnxiety())*2.55).intValue();
-                    visual.get(i).findViewById(R.id.anxiety_visual).setBackgroundColor(Color.rgb(anx,anx,anx));
-                    container.addView(visual.get(i));
-                    if (i!=visual.size()-1&& !visualObjects.get(i).getDate().equals(visualObjects.get(i+1).getDate())){
-                        lines.add((LinearLayout)inflateVisual.inflate(R.layout.line,null,true));
-                        container.addView(lines.get(j));
-                        j++;
-                    }
-                }
+        for (int i=0;i<visual.size();i++){
+            setText(i);
+            int mood =visualObjects.get(i).getMood();
+            setColours(mood,i);
+            if (visualObjects.get(i).getNoteBoolean()){
+                ImageView  view =(ImageView)visual.get(i).findViewById(R.id.icon_3);
+                view.setImageResource(R.drawable.ic_note);
+            }
+            setNotesOnClick(i);
+            int anx =Double.valueOf((100-visualObjects.get(i).getAnxiety())*2.55).intValue();
+            visual.get(i).findViewById(R.id.anxiety_visual).setBackgroundColor(Color.rgb(anx,anx,anx));
+            container.addView(visual.get(i));
+            if (i!=visual.size()-1&& !visualObjects.get(i).getDate().equals(visualObjects.get(i+1).getDate())){
+                lines.add((LinearLayout)inflateVisual.inflate(R.layout.line,null,true));
+                container.addView(lines.get(j));
+                j++;
+            }
+        }
 
     }
     private void setText(int index){
@@ -170,6 +148,31 @@ ArrayList<RelativeLayout> visual= new ArrayList<>(0);
             weight.setTextColor(Color.BLACK);
         }
     }
+    private void setColours(int mood, int i){
+        if(mood>=95){
+            visual.get(i).findViewById(R.id.visual_background).setBackgroundColor(Color.rgb(255,0,0));
+        }else if(mood<95&&mood>=85){
+            visual.get(i).findViewById(R.id.visual_background).setBackgroundColor(Color.rgb(255,46,1));
+        }else if(mood<85&&mood>=75){
+            visual.get(i).findViewById(R.id.visual_background).setBackgroundColor(Color.rgb(255,97,1));
+        }else if(mood<75&&mood>=65){
+            visual.get(i).findViewById(R.id.visual_background).setBackgroundColor(Color.rgb(255,146,1));
+        }else if(mood<65&&mood>=55){
+            visual.get(i).findViewById(R.id.visual_background).setBackgroundColor(Color.rgb(255,186,1));
+        }else if(mood<55&&mood>=45){
+            visual.get(i).findViewById(R.id.visual_background).setBackgroundColor(Color.rgb(255,255,0));
+        }else if(mood<45&&mood>=35){
+            visual.get(i).findViewById(R.id.visual_background).setBackgroundColor(Color.rgb(1,210,255));
+        }else if(mood<35&&mood>=25){
+            visual.get(i).findViewById(R.id.visual_background).setBackgroundColor(Color.rgb(1,165,255));
+        }else if(mood<25&&mood>=15){
+            visual.get(i).findViewById(R.id.visual_background).setBackgroundColor(Color.rgb(1,123,255));
+        }else if(mood<15&&mood>5){
+            visual.get(i).findViewById(R.id.visual_background).setBackgroundColor(Color.rgb(1,83,255));
+        }else if(mood<=5){
+            visual.get(i).findViewById(R.id.visual_background).setBackgroundColor(Color.rgb(0,0,255));
+        }
+    }
     private void setNotesOnClick(final int index){
         if(visualObjects.get(index).getNoteBoolean()){
             visual.get(index).setOnClickListener(new View.OnClickListener() {
@@ -186,6 +189,7 @@ ArrayList<RelativeLayout> visual= new ArrayList<>(0);
                             .setIcon(R.drawable.ic_note)
                             .show();
                 }
-            });}
+            });
+		}
     }
 }
